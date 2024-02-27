@@ -1,0 +1,5 @@
+kaggle~=1.6.5
+keras~=3.0.4
+torchvision
+torch
+matplotlib
