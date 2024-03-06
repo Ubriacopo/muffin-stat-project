@@ -4,30 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/muffin-stat-keras.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/callbacks/early_stopping.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/kaggle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/introduction.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k_fold_cv/k_fold_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kaggle_initializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keras-3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keras.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_neural_network.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/kaggle_initializer.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/machine_limitations.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/muffin_chihuahua.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-structure.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/pre_processing.py" afterDir="false" />
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Project Initialization V2">
+      <change afterPath="$PROJECT_DIR$/callbacks/learning_rate_reschedule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/autotuned_dnn/autotuned_cnn_study.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/autotuned_dnn/autotuned_dnn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/hyperparameters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/model_studies.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/data/out_2900-1100-no-aug.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_study.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hyperparameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/simple_cnn_study.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/study_structure.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/zero_one_validation_loss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/cache_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k_fold_cv/k_fold_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/k_fold_cv/k_fold_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_neural_network.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/muffin_chihuahua.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/muffin_chihuahua.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/pre_processing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +34,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
@@ -57,35 +55,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.kaggle_initializer.executor": "Run",
-    "Python.muffin-stat-keras.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/jacopo/Bilder",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.folding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.kaggle_initializer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.muffin-stat-keras.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Markdown-Groovy.md.groovy&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jacopo/PycharmProjects/muffin-stat-keras/models/naive_dnn_gen/data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models/naive_dnn_gen/data" />
+      <recent name="$PROJECT_DIR$/models/simple_cnn" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/notebooks" />
       <recent name="$PROJECT_DIR$/.venv" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/models" />
+      <recent name="$PROJECT_DIR$/models/autotuned_dnn" />
+      <recent name="$PROJECT_DIR$/models/simple_cnn" />
+      <recent name="$PROJECT_DIR$/models/naive_dnn_gen" />
+      <recent name="$PROJECT_DIR$/models/naive-gen" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.kaggle_initializer">
+  <component name="RunManager" selected="Python.muffin-stat-keras">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="muffin-stat-keras" />
       <option name="ENV_FILES" value="" />
@@ -182,14 +186,53 @@
       <option name="presentableId" value="Default" />
       <updated>1707758096086</updated>
       <workItem from="1707758097726" duration="8236000" />
-      <workItem from="1709048391573" duration="5069000" />
+      <workItem from="1709048391573" duration="5448000" />
+      <workItem from="1709128522451" duration="17273000" />
+      <workItem from="1709239315216" duration="172000" />
+      <workItem from="1709239586895" duration="2428000" />
+      <workItem from="1709564489355" duration="4523000" />
+      <workItem from="1709565416667" duration="14759000" />
+      <workItem from="1709647917150" duration="24893000" />
+      <workItem from="1709731338990" duration="10000000" />
+      <workItem from="1709741909972" duration="7709000" />
+      <workItem from="1709750995645" duration="1406000" />
+      <workItem from="1709764801916" duration="628000" />
     </task>
+    <task id="LOCAL-00001" summary="Project Initialization V2">
+      <option name="closed" value="true" />
+      <created>1709057768870</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709057768870</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project Initialization V2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project Initialization V2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="muffin_chihuahua">
+        <watch expression="zero_one_loss" language="Jupyter" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/muffin_stat_keras$muffin_stat_keras.coverage" NAME="muffin-stat-keras Coverage Results" MODIFIED="1707760141173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/muffin_stat_keras$muffin_stat_keras.coverage" NAME="muffin-stat-keras Coverage Results" MODIFIED="1709566161289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

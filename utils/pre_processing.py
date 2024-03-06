@@ -42,15 +42,5 @@ class AugmentationProcedure:
 
 class AugmentationFactory:
     @staticmethod
-    @deprecated
-    def make_complete_procedure(rescaling_factor: float = 1. / 255) -> AugmentationProcedure:
-        """
-        :deprecated: use make_augmentation_procedure() instead
-        :param rescaling_factor:
-        :return:
-        """
-        return AugmentationProcedure().add_rescaling(rescaling_factor).add_random_flip()
-
-    @staticmethod
     def make_complete_procedure_keras() -> AugmentationProcedure:
         return AugmentationProcedure().add_random_flip().add_random_brightness()
