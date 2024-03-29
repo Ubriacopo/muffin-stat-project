@@ -1,21 +1,6 @@
+from typing import Callable
+
 import keras
-
-
-def naive_dnn_pre_process(input_shape: (int, int, int), model: keras.Model, augmentation: keras.Model) \
-        -> tuple[keras.Layer, keras.Layer]:
-    """
-    todo documentation change name and move somehwere else
-    :param input_shape:
-    :param model:
-    :param augmentation:
-    :return:
-    """
-    input_layer = keras.Input(shape=input_shape, name='naive_dnn_pre')
-
-    x = augmentation(input_layer)
-    output_layer = model(x)
-
-    return input_layer, output_layer
 
 
 def naive_dnn(input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:
@@ -25,11 +10,14 @@ def naive_dnn(input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:
     """
 
     input_layer = keras.Input(shape=input_shape, name='naive_dnn')
-    x = keras.layers.Flatten()(input_layer)
-    # Now that we do not have submodel I dunno but it works better
-    # Seems like 2.9k and 1.1k are overfitting, but I ain't that sure
-    x = keras.layers.Dense(units=2900, activation='relu')(x)
-    x = keras.layers.Dense(units=1100, activation='relu')(x)
+    x = keras.layers.Flatten(data_format="channels_first")(input_layer)
+
+    x = keras.layers.Dense(units=700, activation='relu')(x)
+
+    # As suggested by practical experience a 0.5 start rare should be good
+    x = keras.layers.Dropout(rate=0.5)(x)
+
+    x = keras.layers.Dense(units=250, activation='relu')(x)
 
     output_layer = keras.layers.Dense(units=1, activation='sigmoid')(x)
     return input_layer, output_layer

@@ -4,27 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Project Initialization V2">
-      <change afterPath="$PROJECT_DIR$/callbacks/learning_rate_reschedule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/autotuned_dnn/autotuned_cnn_study.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/autotuned_dnn/autotuned_dnn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/hyperparameters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/model_studies.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/data/out_2900-1100-no-aug.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_study.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hyperparameters.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/simple_cnn_study.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/study_structure.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/zero_one_validation_loss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/cache_manager.py" afterDir="false" />
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Project restructure 3&#10;Also started writing notebooks for each approach and started implementing functions">
+      <change afterPath="$PROJECT_DIR$/models/build_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/data/3500-1350_no_aug/compare_chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/data/3500-1350_no_aug/compare_chart_full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/data/700-250-no-aug-dropout/out.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/data/700-250-no-aug/out.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/hyperparameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_construction.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/optimizer_choice.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k_fold_cv/k_fold_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/k_fold_cv/k_fold_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_neural_network.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/muffin_chihuahua.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/muffin_chihuahua.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hyperparameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/hyperparameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_studies.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_study.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_study.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/pre_processing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -50,29 +44,32 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2cHAODubXbO8nsDWvB2R41flz8B" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.kaggle_initializer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.muffin-stat-keras.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Markdown-Groovy.md.groovy&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jacopo/PycharmProjects/muffin-stat-keras/models/naive_dnn_gen/data&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.kaggle_initializer.executor": "Run",
+    "Python.muffin-stat-keras.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/jacopo/PycharmProjects/muffin-stat-keras/models/naive_dnn_gen/data/700-250-no-aug-dropout",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/models/naive_dnn_gen/data" />
@@ -82,11 +79,11 @@
       <recent name="$PROJECT_DIR$/.venv" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models/naive_dnn_gen/data/3500-1350_no_aug" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/models/autotuned_dnn" />
       <recent name="$PROJECT_DIR$/models/simple_cnn" />
       <recent name="$PROJECT_DIR$/models/naive_dnn_gen" />
-      <recent name="$PROJECT_DIR$/models/naive-gen" />
     </key>
   </component>
   <component name="RunManager" selected="Python.muffin-stat-keras">
@@ -196,7 +193,10 @@
       <workItem from="1709731338990" duration="10000000" />
       <workItem from="1709741909972" duration="7709000" />
       <workItem from="1709750995645" duration="1406000" />
-      <workItem from="1709764801916" duration="628000" />
+      <workItem from="1709764801916" duration="4159000" />
+      <workItem from="1709988921770" duration="7576000" />
+      <workItem from="1710251654466" duration="9819000" />
+      <workItem from="1710340443941" duration="8116000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -206,23 +206,33 @@
       <option name="project" value="LOCAL" />
       <updated>1709057768870</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Project restructure 3&#10;Also started writing notebooks for each approach and started implementing functions">
+      <option name="closed" value="true" />
+      <created>1709765480858</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709765480858</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Project Initialization V2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Initialization V2" />
+    <MESSAGE value="Project restructure 3&#10;Also started writing notebooks for each approach and started implementing functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project restructure 3&#10;Also started writing notebooks for each approach and started implementing functions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py</url>
-          <line>26</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/models/build_model.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
