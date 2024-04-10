@@ -1,6 +1,6 @@
 import torch
 
-from torch.utils.data import DataLoader, Subset, ConcatDataset, ChainDataset
+from torch.utils.data import DataLoader, Subset, ConcatDataset
 from torchvision.datasets import ImageFolder
 
 

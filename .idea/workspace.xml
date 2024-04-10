@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Project restructure 3&#10;Also started writing notebooks for each approach and started implementing functions">
-      <change afterPath="$PROJECT_DIR$/models/build_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/data/3500-1350_no_aug/compare_chart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/data/3500-1350_no_aug/compare_chart_full.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/data/700-250-no-aug-dropout/out.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/data/700-250-no-aug/out.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/hyperparameters.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_construction.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/optimizer_choice.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/hyperparameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/hyperparameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_studies.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_study.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_study.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="WIP" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,13 +14,27 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Ubriacopo"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="de7acb26-1434-42f7-a80c-3b09f124c628" />
+        <option name="url" value="https://github.com/Ubriacopo/muffin-stat-project.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -66,7 +65,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -197,6 +196,7 @@
       <workItem from="1709988921770" duration="7576000" />
       <workItem from="1710251654466" duration="9819000" />
       <workItem from="1710340443941" duration="8116000" />
+      <workItem from="1712765296031" duration="11728000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -214,7 +214,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709765480858</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="WIP">
+      <option name="closed" value="true" />
+      <created>1712773675669</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712773675669</updated>
+    </task>
+    <task id="LOCAL-00004" summary="WIP">
+      <option name="closed" value="true" />
+      <created>1712773789545</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712773789545</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +240,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Project Initialization V2" />
     <MESSAGE value="Project restructure 3&#10;Also started writing notebooks for each approach and started implementing functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project restructure 3&#10;Also started writing notebooks for each approach and started implementing functions" />
+    <MESSAGE value="WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

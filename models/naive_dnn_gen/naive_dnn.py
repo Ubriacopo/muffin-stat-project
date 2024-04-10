@@ -1,45 +1,30 @@
+from abc import ABC
 from typing import Callable
 
 import keras
+import keras_tuner
+
+from models.model_container import ModelContainer
 
 
-def naive_dnn(input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:
-    """
-    :param input_shape:
-    :return: [input, output]
-    """
+# todo change name to something more signifcant. Container is bad
+class NaiveDnnContainer(ModelContainer, ABC):
 
-    input_layer = keras.Input(shape=input_shape, name='naive_dnn')
-    x = keras.layers.Flatten(data_format="channels_first")(input_layer)
+    def __init__(self, default_shape: (int, int, int)):
+        super().__init__("naive_dnn", default_shape)
 
-    x = keras.layers.Dense(units=700, activation='relu')(x)
+    def make_model(self, input_shape: (int, int, int), hyper_parameters: keras_tuner.HyperParameters) -> \
+            tuple[keras.Layer, keras.Layer]:
 
-    # As suggested by practical experience a 0.5 start rare should be good
-    x = keras.layers.Dropout(rate=0.5)(x)
+        input_layer = keras.Input(shape=input_shape, name='auto_naive_dnn')
+        x = keras.layers.Flatten(data_format="channels_first")(input_layer)
 
-    x = keras.layers.Dense(units=250, activation='relu')(x)
+        for i in range(hyper_parameters.Int("layers", min_value=1, max_value=5, default=2)):
+            units = hyper_parameters.Int(name=f"layer_{i}", min_value=128, max_value=1024, step=64)
+            x = keras.layers.Dense(units=units)(x)
 
-    output_layer = keras.layers.Dense(units=1, activation='sigmoid')(x)
-    return input_layer, output_layer
+            if hyper_parameters.Boolean(name=f"dropout_{i}", default=False):
+                x = keras.layers.Dropout(rate=0.25)(x)
 
-
-def naive_dnn_augmentation(input_shape: (int, int, int), random_rotation: float = 0.1,
-                           random_flip: [bool, bool] = None) -> tuple[keras.layers.Layer, keras.layers.Layer]:
-    """
-    todo documentation and move somewhere else
-    :param input_shape:
-    :param random_rotation:
-    :param random_flip:
-    :return:
-    """
-    input_layer = keras.Input(shape=input_shape, name='naive_dnn_augmentation')
-    x = keras.layers.RandomRotation(random_rotation)(input_layer)
-    if random_flip is not None and random_flip[0] and random_flip[1]:
-        x = keras.layers.RandomFlip("horizontal_and_vertical")(x)
-    elif random_flip is not None and random_flip[0]:
-        x = keras.layers.RandomFlip("horizontal")(x)
-    elif random_flip is not None and random_flip[1]:
-        x = keras.layers.RandomFlip("vertical")(x)
-
-    output_layer = x
-    return input_layer, output_layer
+        output_layer = keras.layers.Dense(units=1, activation='sigmoid')(x)
+        return input_layer, output_layer
