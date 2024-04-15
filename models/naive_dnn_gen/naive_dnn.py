@@ -1,6 +1,4 @@
 from abc import ABC
-from typing import Callable
-
 import keras
 import keras_tuner
 
@@ -19,8 +17,8 @@ class NaiveDnnContainer(ModelContainer, ABC):
         input_layer = keras.Input(shape=input_shape, name='auto_naive_dnn')
         x = keras.layers.Flatten(data_format="channels_first")(input_layer)
 
-        for i in range(hyper_parameters.Int("layers", min_value=1, max_value=5, default=2)):
-            units = hyper_parameters.Int(name=f"layer_{i}", min_value=128, max_value=1024, step=64)
+        for i in range(hyper_parameters.Int("layers", min_value=1, max_value=2, default=2)):
+            units = hyper_parameters.Int(name=f"layer_{i}", min_value=64, max_value=1536, step=64)
             x = keras.layers.Dense(units=units)(x)
 
             if hyper_parameters.Boolean(name=f"dropout_{i}", default=False):

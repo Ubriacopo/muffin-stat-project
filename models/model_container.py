@@ -1,9 +1,11 @@
 from __future__ import annotations
 
+import gc
 from abc import abstractmethod
 
 import keras
 import keras_tuner
+import torch
 from keras import Model
 
 
@@ -40,15 +42,24 @@ class ModelContainer(keras_tuner.HyperModel):
         """
         pass
 
-    def build(self, hp):
-        #https://github.com/keras-team/keras-tuner/issues/395
-        # todo release memory?
+    def compile_model(self, model: Model, hyperparameters: keras_tuner.HyperParameters) -> None:
         """
-        Builds the model and compiles it. This way we are ready to train with the current set of
-        hyperparameters or simply look for better ones.
-        :param hyper_parameters:
+        So that I can redefine elements of the model.
+        :param model:
+        :param hyperparameters:
         :return:
         """
+        learning_rate = hyperparameters.Float("lr", min_value=1e-4, max_value=1e-2, sampling="log")
+        # todo add the metric 0-1 loss
+        model.compile(optimizer=keras.optimizers.Adadelta(learning_rate=learning_rate),
+                      metrics=['accuracy'], loss=self.loss_function)
+
+    def build(self, hp):
+        # https://github.com/keras-team/keras-tuner/issues/395
+        # todo release memory?
+        torch.cuda.empty_cache()
+        gc.collect()
+
         input_layer, output_layer = self.make_model(self.input_shape, hp)
         model = Model(input_layer, output_layer)
 
@@ -60,9 +71,5 @@ class ModelContainer(keras_tuner.HyperModel):
 
             model = Model(input_layer, output_layer)
 
-        learning_rate = hp.Float("lr", min_value=1e-4, max_value=1e-2, sampling="log")
-        # todo add the metric 0-1 loss
-        model.compile(optimizer=keras.optimizers.Adadelta(learning_rate=learning_rate),
-                      metrics=['accuracy'], loss=self.loss_function)
-
+        self.compile_model(model, hp)
         return model

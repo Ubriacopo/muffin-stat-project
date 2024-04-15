@@ -1,49 +1,35 @@
+from abc import ABC
 import keras
-from keras import Input, Model
-from keras.src.layers import Conv2D
+import keras_tuner
 
-from utils.pre_processing import AugmentationProcedure
+from models.model_container import ModelContainer
 
 
-class SimpleCNN(keras.Model):
-    def __init__(self, input_shape: (int, int, int),
-                 augmentation_procedure: AugmentationProcedure = None, name="naive-dnn", **kwargs):
-        super().__init__(name=name, **kwargs)
-        self.input_shape = input_shape
+class SimpleCNNContainer(ModelContainer, ABC):
+    def __init__(self, default_shape: (int, int, int)):
+        super().__init__("simple_cnn", default_shape)
 
-        self.augmentation_procedure = augmentation_procedure
+    def make_model(self, input_shape: (int, int, int), hyper_parameters: keras_tuner.HyperParameters) -> \
+            tuple[keras.Layer, keras.Layer]:
+        input_layer = keras.Input(shape=input_shape, name=self.name)
 
-        self.conv_layer = keras.layers.Conv2D(filters=32, kernel_size=(3, 3), padding='same',
-                                              activation='relu', input_shape=(224, 224, 3))
-        self.max_pooling = keras.layers.MaxPooling2D(pool_size=(2, 2), strides=2)
+        x = self.__make_conv_layer(hyper_parameters, input_layer, default=32)
+        x = self.__make_conv_layer(hyper_parameters, x, 1, default=64) \
+            if hyper_parameters.Boolean(name="second_conv_layer", default=True) else x
 
-        self.conv_layer_2 = keras.layers.Conv2D(filters=64, kernel_size=(3, 3), padding='same',
-                                                activation='relu')
-        self.max_pooling_2 = keras.layers.MaxPooling2D(pool_size=(2, 2), strides=2)
+        x = keras.layers.Flatten(data_format="channels_first")(x)
 
-        self.flatten_layer = keras.layers.Flatten()
-        self.hidden_layer = keras.layers.Dense(units=64, activation='relu')
-        self.output_layer = keras.layers.Dense(1, activation='sigmoid')
+        hidden_units = hyper_parameters.Int(name="hidden_units", min_value=16, max_value=128, default=64, step=16)
+        x = keras.layers.Dense(units=hidden_units, activation='relu')(x)
+        output_layer = keras.layers.Dense(1, activation='sigmoid')(x)
+        return input_layer, output_layer
 
-    def call(self, inputs):
-        if self.augmentation_procedure is not None:
-            inputs = self.augmentation_procedure.augmentation_procedure(inputs)
-        inputs = inputs.permute(0, 2, 3, 1)
-        x = self.conv_layer(inputs)
-        x = self.max_pooling(x)
+    def __make_conv_layer(self, hyper_parameters: keras_tuner.HyperParameters,
+                          previous_layer: keras.Layer, conv_id: int = 0, default: int = None) -> keras.Layer:
+        kernel_size = hyper_parameters.Int(name=f"kernel_{conv_id}", min_value=2, max_value=5)
+        filters = hyper_parameters.Int(name=f"filters_{conv_id}", step=16, min_value=16, max_value=64, default=default)
 
-        x = self.conv_layer_2(x)
-        x = self.max_pooling_2(x)
+        x = keras.layers.Conv2D(filters=filters, kernel_size=(kernel_size, kernel_size),
+                                padding='same', activation='relu', data_format='channels_first')(previous_layer)
 
-        x = self.flatten_layer(x)
-
-        x = self.hidden_layer(x)
-        return self.output_layer(x)
-
-    def build_graph(self):
-        """
-        NOTE: Doesn't allow to delete the model
-        :return:
-        """
-        x = Input(shape=self.input_shape)
-        return Model(inputs=[x], outputs=self.call(x))
+        return keras.layers.MaxPooling2D(pool_size=(2, 2), strides=2, data_format='channels_first')(x)
