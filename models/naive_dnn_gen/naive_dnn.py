@@ -2,11 +2,11 @@ from abc import ABC
 import keras
 import keras_tuner
 
-from models.model_container import ModelContainer
+from models.tunable_model_container import TunableModelContainer
 
 
 # todo change name to something more signifcant. Container is bad
-class NaiveDnnContainer(ModelContainer, ABC):
+class NaiveDnnContainer(TunableModelContainer, ABC):
 
     def __init__(self, default_shape: (int, int, int)):
         super().__init__("naive_dnn", default_shape)

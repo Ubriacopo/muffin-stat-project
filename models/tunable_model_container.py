@@ -9,7 +9,7 @@ import torch
 from keras import Model
 
 
-class ModelContainer(keras_tuner.HyperModel):
+class TunableModelContainer(keras_tuner.HyperModel):
     def __init__(self, name: str, default_shape: (int, int, int), loss_function: str = "binary_crossentropy"):
         """
         A ModelContainer is simply a structure that wraps the construction of the model to use the hyperparameters
@@ -28,16 +28,17 @@ class ModelContainer(keras_tuner.HyperModel):
     def load_shape(self, shape: (int, int, int)):
         self.input_shape = shape
 
-    def load_augmentation(self, augmentation: ModelContainer):
+    def load_augmentation(self, augmentation: TunableModelContainer):
         self.augmentation = augmentation
 
     @abstractmethod
-    def make_model(self, input_shape: (int, int, int), hyper_parameters: keras_tuner.HyperParameters) \
+    def make_model_with_hyperparameters(self, input_shape: (int, int, int),
+                                        hyperparameters: keras_tuner.HyperParameters) \
             -> tuple[keras.Layer, keras.Layer]:
         """
         Method that makes model layers.
         :param input_shape: Input shape
-        :param hyper_parameters: Hyper-parameters instance
+        :param hyperparameters: Hyper-parameters instance
         :return: Model input and output layers. This does not build a model yet.
         """
         pass
@@ -51,7 +52,7 @@ class ModelContainer(keras_tuner.HyperModel):
         """
         learning_rate = hyperparameters.Float("lr", min_value=1e-4, max_value=1e-2, sampling="log")
         # todo add the metric 0-1 loss
-        model.compile(optimizer=keras.optimizers.Adadelta(learning_rate=learning_rate),
+        model.compile(optimizer=keras.optimizers.Adadelta(learning_rate=1e-3),
                       metrics=['accuracy'], loss=self.loss_function)
 
     def build(self, hp):
@@ -60,7 +61,7 @@ class ModelContainer(keras_tuner.HyperModel):
         torch.cuda.empty_cache()
         gc.collect()
 
-        input_layer, output_layer = self.make_model(self.input_shape, hp)
+        input_layer, output_layer = self.make_model_with_hyperparameters(self.input_shape, hp)
         model = Model(input_layer, output_layer)
 
         if self.augmentation is not None:

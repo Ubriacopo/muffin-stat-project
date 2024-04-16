@@ -1,0 +1,154 @@
+Results summary
+Results in cnn_search/standard_image
+Showing 10 best trials
+Objective(name="val_loss", direction="min")
+
+Trial 0013 summary
+Hyperparameters:
+lr: 0.001
+kernel_0: 4
+filters_0: 48
+second_conv_layer: True
+kernel_1: 4
+filters_1: 64
+hidden_units: 32
+tuner/epochs: 2
+tuner/initial_epoch: 0
+tuner/bracket: 4
+tuner/round: 0
+Score: 0.5482116341590881
+
+Trial 0001 summary
+Hyperparameters:
+lr: 0.001
+kernel_0: 2
+filters_0: 32
+second_conv_layer: True
+kernel_1: 5
+filters_1: 48
+hidden_units: 48
+tuner/epochs: 2
+tuner/initial_epoch: 0
+tuner/bracket: 4
+tuner/round: 0
+Score: 0.5690654516220093
+
+Trial 0007 summary
+Hyperparameters:
+lr: 0.001
+kernel_0: 4
+filters_0: 48
+second_conv_layer: False
+kernel_1: 3
+filters_1: 16
+hidden_units: 32
+tuner/epochs: 2
+tuner/initial_epoch: 0
+tuner/bracket: 4
+tuner/round: 0
+Score: 0.5770590305328369
+
+Trial 0014 summary
+Hyperparameters:
+lr: 0.001
+kernel_0: 4
+filters_0: 64
+second_conv_layer: True
+kernel_1: 3
+filters_1: 16
+hidden_units: 80
+tuner/epochs: 2
+tuner/initial_epoch: 0
+tuner/bracket: 4
+tuner/round: 0
+Score: 0.5811321139335632
+
+Trial 0000 summary
+Hyperparameters:
+lr: 0.001
+kernel_0: 5
+filters_0: 32
+second_conv_layer: True
+kernel_1: 4
+filters_1: 32
+hidden_units: 16
+tuner/epochs: 2
+tuner/initial_epoch: 0
+tuner/bracket: 4
+tuner/round: 0
+Score: 0.5878424048423767
+
+Trial 0005 summary
+Hyperparameters:
+lr: 0.001
+kernel_0: 2
+filters_0: 32
+second_conv_layer: True
+kernel_1: 5
+filters_1: 48
+hidden_units: 64
+tuner/epochs: 2
+tuner/initial_epoch: 0
+tuner/bracket: 4
+tuner/round: 0
+Score: 0.6128110885620117
+
+Trial 0008 summary
+Hyperparameters:
+lr: 0.001
+kernel_0: 5
+filters_0: 16
+second_conv_layer: False
+kernel_1: 3
+filters_1: 48
+hidden_units: 64
+tuner/epochs: 2
+tuner/initial_epoch: 0
+tuner/bracket: 4
+tuner/round: 0
+Score: 0.6141596436500549
+
+Trial 0017 summary
+Hyperparameters:
+lr: 0.001
+kernel_0: 2
+filters_0: 48
+second_conv_layer: False
+kernel_1: 3
+filters_1: 64
+hidden_units: 32
+tuner/epochs: 2
+tuner/initial_epoch: 0
+tuner/bracket: 4
+tuner/round: 0
+Score: 0.6174607872962952
+
+Trial 0003 summary
+Hyperparameters:
+lr: 0.001
+kernel_0: 5
+filters_0: 48
+second_conv_layer: True
+kernel_1: 4
+filters_1: 32
+hidden_units: 112
+tuner/epochs: 2
+tuner/initial_epoch: 0
+tuner/bracket: 4
+tuner/round: 0
+Score: 0.6292651891708374
+
+Trial 0002 summary
+Hyperparameters:
+lr: 0.001
+kernel_0: 2
+filters_0: 48
+second_conv_layer: True
+kernel_1: 5
+filters_1: 32
+hidden_units: 16
+tuner/epochs: 2
+tuner/initial_epoch: 0
+tuner/bracket: 4
+tuner/round: 0
+Score: 0.6337013244628906
