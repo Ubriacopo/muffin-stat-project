@@ -5,16 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="WIP">
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/tuner-results" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/dataset.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/dataset.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/model_container.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/oracle.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_00/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_01/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_02/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_03/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_04/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_05/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_06/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_07/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_08/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_09/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_10/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_11/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_12/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_13/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_14/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_15/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_16/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_17/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_18/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_19/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_20/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_21/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_22/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_23/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_24/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_25/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_26/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_27/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_28/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_29/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_30/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_31/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_32/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_33/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_34/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_35/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_36/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_37/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_38/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_39/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_40/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_41/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_42/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_43/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_44/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_45/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_46/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_47/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_48/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_49/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/tuner0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/tunable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/my_tuner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_container.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/tunable_model_container.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_studies.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/simple_cnn/simple_cnn_study.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/simple_cnn_study.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/dataset_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/dataset_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tunable_model_container.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/tunable_model_container.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +89,12 @@
     &quot;assignee&quot;: &quot;Ubriacopo&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="de7acb26-1434-42f7-a80c-3b09f124c628" />
-        <option name="url" value="https://github.com/Ubriacopo/muffin-stat-project.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ubriacopo/muffin-stat-project.git&quot;,
+    &quot;accountId&quot;: &quot;de7acb26-1434-42f7-a80c-3b09f124c628&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -61,25 +109,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.kaggle_initializer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.muffin-stat-keras.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jacopo/PycharmProjects/muffin-stat-keras/models/naive_dnn_gen/data/700-250-no-aug-dropout&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PythonContentEntriesConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.kaggle_initializer.executor": "Run",
+    "Python.muffin-stat-keras.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/jacopo/PycharmProjects/muffin-stat-keras/models/naive_dnn_gen/data/700-250-no-aug-dropout",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/models/naive_dnn_gen/data" />
@@ -213,7 +261,9 @@
       <workItem from="1712902005591" duration="5032000" />
       <workItem from="1712912156326" duration="2892000" />
       <workItem from="1713195758135" duration="4363000" />
-      <workItem from="1713269860894" duration="10413000" />
+      <workItem from="1713269860894" duration="11106000" />
+      <workItem from="1713445801678" duration="16607000" />
+      <workItem from="1713513777394" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -247,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712773789545</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="WIP">
+      <option name="closed" value="true" />
+      <created>1713285616037</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713285616037</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

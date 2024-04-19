@@ -8,8 +8,10 @@ import keras_tuner
 import torch
 from keras import Model
 
+from models.model_container import ModelContainer
 
-class TunableModelContainer(keras_tuner.HyperModel):
+
+class TunableModelContainer(keras_tuner.HyperModel, ModelContainer):
     def __init__(self, name: str, default_shape: (int, int, int), loss_function: str = "binary_crossentropy"):
         """
         A ModelContainer is simply a structure that wraps the construction of the model to use the hyperparameters
@@ -23,13 +25,8 @@ class TunableModelContainer(keras_tuner.HyperModel):
         self.loss_function = loss_function
 
         self.name = name
-        self.augmentation = None
+        self.augmentation: TunableModelContainer | None = None
 
-    def load_shape(self, shape: (int, int, int)):
-        self.input_shape = shape
-
-    def load_augmentation(self, augmentation: TunableModelContainer):
-        self.augmentation = augmentation
 
     @abstractmethod
     def make_model_with_hyperparameters(self, input_shape: (int, int, int),
@@ -42,18 +39,6 @@ class TunableModelContainer(keras_tuner.HyperModel):
         :return: Model input and output layers. This does not build a model yet.
         """
         pass
-
-    def compile_model(self, model: Model, hyperparameters: keras_tuner.HyperParameters) -> None:
-        """
-        So that I can redefine elements of the model.
-        :param model:
-        :param hyperparameters:
-        :return:
-        """
-        learning_rate = hyperparameters.Float("lr", min_value=1e-4, max_value=1e-2, sampling="log")
-        # todo add the metric 0-1 loss
-        model.compile(optimizer=keras.optimizers.Adadelta(learning_rate=1e-3),
-                      metrics=['accuracy'], loss=self.loss_function)
 
     def build(self, hp):
         # https://github.com/keras-team/keras-tuner/issues/395
