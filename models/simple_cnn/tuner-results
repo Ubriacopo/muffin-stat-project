@@ -152,3 +152,16 @@ tuner/initial_epoch: 0
 tuner/bracket: 4
 tuner/round: 0
 Score: 0.6337013244628906
+
+
+-- Best with 16 50 times
+Trial 40 summary
+Hyperparameters:
+conv_layers: 2
+optimizer: adam
+kernel_0: 3
+filters_0: 16
+hidden_units: 32
+kernel_1: 2
+filters_1: 16
+Score: 0.313353955745697
