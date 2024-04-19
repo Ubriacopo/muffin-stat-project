@@ -1,4 +1,11 @@
+import gc
+from typing import Final
+
 import keras
+import keras_tuner
+import torch
+
+from models.structure.model_family import TunableModelFamily
 
 
 class TunableModelFamilyHypermodel(keras_tuner.HyperModel):
@@ -18,5 +25,4 @@ class TunableModelFamilyHypermodel(keras_tuner.HyperModel):
 
         model = self.model_family.make_model(self.input_shape)
         self.model_family.compile_model(model, hyperparameters.get("optimizer"))
-
         return model
