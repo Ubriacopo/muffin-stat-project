@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 
-
+@deprecated
 class Hyperparameters:
     def __init__(self, version: str = "1.0", learning_rate: float = 0.01, batch_size: int = 32,
                  n_epochs: int = 100, image_size: (int, int, int) = (256, 256, 3), n_classes: int = 2):

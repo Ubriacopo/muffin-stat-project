@@ -5,11 +5,10 @@ from typing import Final
 import keras
 import keras_tuner
 
-from models.tunable import TunableModelFamily
+from models.structure.tunable import TunableModelFamily
 
 
-# Refactor like this https://keras.io/guides/keras_tuner/getting_started/#keep-keras-code-separate
-class SimpleCnnModelFamily(TunableModelFamily):
+class SimpleCnnModelFamily(ModelFamily):
 
     def __init__(self):
         super().__init__("SimpleCNN", "binary_crossentropy")
@@ -29,8 +28,20 @@ class SimpleCnnModelFamily(TunableModelFamily):
         output_layer = keras.layers.Dense(1, activation='sigmoid')(x)
         return input_layer, output_layer
 
+    def __make_conv_layer(self, kernel_size, filters, previous_layer: keras.Layer) -> keras.Layer:
+        x = keras.layers.Conv2D(filters=filters, kernel_size=(kernel_size, kernel_size),
+                                padding='same', activation='relu', data_format='channels_first')(previous_layer)
+        return keras.layers.MaxPooling2D(pool_size=(2, 2), strides=2, data_format='channels_first')(x)
+
     def compile_model(self, model: keras.Model, optimizer: str | keras.optimizers.Optimizer, **kwargs):
         model.compile(optimizer=optimizer, metrics=self.metrics, loss=self.loss)
+
+
+# Refactor like this https://keras.io/guides/keras_tuner/getting_started/#keep-keras-code-separate
+class SimpleCnnTunableModelFamily(SimpleCnnModelFamily, TunableModelFamily):
+
+    def __init__(self):
+        super().__init__()
 
     def load_parameters(self, hyperparameters):
         # todo: vedi se effettivamente funziona. sembra (non ho certezze) che facendo così se
@@ -49,12 +60,9 @@ class SimpleCnnModelFamily(TunableModelFamily):
         hyperparameters.Int(name="conv_layers", min_value=1, max_value=3)
         hyperparameters.Int(name="hidden_units", min_value=16, max_value=128)
 
-    def make_model(self, input_shape: (int, int, int)) -> keras.Model:
-        # todo add augmentation optional now
-        input_layer, output_layer = self.make_layers(input_shape=input_shape)
-        return keras.Model(inputs=input_layer, outputs=output_layer)
 
-    def __make_conv_layer(self, kernel_size, filters, previous_layer: keras.Layer) -> keras.Layer:
-        x = keras.layers.Conv2D(filters=filters, kernel_size=(kernel_size, kernel_size),
-                                padding='same', activation='relu', data_format='channels_first')(previous_layer)
-        return keras.layers.MaxPooling2D(pool_size=(2, 2), strides=2, data_format='channels_first')(x)
+class SimpleCnnCompleteModelFamilyInstance(CompleteModelFamilyInstance):
+
+    def get_model(self):
+        # default config
+        self.make_model()

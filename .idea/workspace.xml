@@ -5,59 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="WIP">
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/oracle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_00/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_01/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_02/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_03/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_04/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_05/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_06/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_07/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_08/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_09/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_10/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_11/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_12/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_13/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_14/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_15/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_16/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_17/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_18/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_19/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_20/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_21/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_22/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_23/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_24/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_25/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_26/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_27/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_28/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_29/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_30/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_31/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_32/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_33/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_34/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_35/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_36/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_37/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_38/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_39/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_40/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_41/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_42/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_43/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_44/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_45/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_46/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_47/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_48/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/trial_49/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/standard_image/tuner0.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/tuner-results" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/tuner-results" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/structure/model_family.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/build_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/build_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hyperparameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/hyperparameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_container.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tunable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tunable_model_container.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +66,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "torch",
     "last_opened_file_path": "/home/jacopo/PycharmProjects/muffin-stat-keras/models/naive_dnn_gen/data/700-250-no-aug-dropout",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -130,11 +86,11 @@
       <recent name="$PROJECT_DIR$/.venv" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jfichera\PycharmProjects\muffin-stat-project\models\structure" />
       <recent name="$PROJECT_DIR$/models/naive_dnn_gen/data/3500-1350_no_aug" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/models/autotuned_dnn" />
       <recent name="$PROJECT_DIR$/models/simple_cnn" />
-      <recent name="$PROJECT_DIR$/models/naive_dnn_gen" />
     </key>
   </component>
   <component name="RunManager" selected="Python.muffin-stat-keras">
@@ -193,7 +149,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="tensorflow" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -324,7 +279,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/build_model.py</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">

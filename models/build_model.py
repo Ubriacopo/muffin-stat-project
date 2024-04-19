@@ -2,6 +2,7 @@ import keras
 from keras import Model
 
 
+@deprecated
 def build_model(input_shape: (int, int, int), model: tuple[keras.Layer, keras.Layer],
                 augmentation: tuple[keras.Layer, keras.Layer] = None, name: str = "pre_processed_model") -> Model:
     """
