@@ -4,116 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Ignore update">
-      <change afterPath="$PROJECT_DIR$/models/augmented_dnn/augmented_dnn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/augmented_dnn/augmented_dnn_tune.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/k_fold_cv_procedure.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/search.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/best_iteration_comparison.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/best_iteration_with_dropout_comparison.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/loss_comparison_chart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/oracle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/search.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/top-results.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_00/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_00/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_01/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_01/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_02/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_02/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_03/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_03/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_04/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_04/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_05/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_05/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_06/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_06/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_07/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_07/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_08/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_08/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_09/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_09/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_10/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_10/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_11/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_11/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_12/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_12/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_13/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_13/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_14/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/trial_14/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/three-layers/tuner0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/oracle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/search.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_00/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_00/early_stopping_train_history.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_00/notes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_00/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_01/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_01/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_02/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_02/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_03/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_03/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_04/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_04/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_05/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_05/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_06/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_06/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_07/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_07/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_08/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_08/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_09/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_09/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_10/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_10/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_11/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_11/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_12/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_12/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_13/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_13/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_14/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/trial_14/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/dnn-search/two-layers/tuner0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/some-name.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/three_layers_search.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/notes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/notes.md" afterDir="false" />
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="WIP">
+      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/two_layers_dnn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/structure/augmented_model_family.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/structure/base_model_family.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/structure/default_augmented_model_family.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/todo.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k_fold_cv/k_fold_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/k_fold_dataset_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/autotuned_dnn/autotuned_cnn_study.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/autotuned_dnn/autotuned_dnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/augmented_dnn/notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/build_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/hyperparameters.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_studies.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/auto_naive_dnn.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/data/3500-1350_no_aug/compare_chart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/data/3500-1350_no_aug/compare_chart_full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/data/700-250-no-aug-dropout/out.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/data/700-250-no-aug/out.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/data/out_2900-1100-no-aug.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/hyperparameters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/augmented_dnn/augmented_dnn_tune.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/augmented_dnn/augmented_dnn_tune.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_construction.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_study.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_v2.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/optimizer_choice.md" beforeDir="false" afterPath="$PROJECT_DIR$/models/optimizer_choice.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/structure/model_family.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/model_family.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/structure/model_family.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-structure.md" beforeDir="false" afterPath="$PROJECT_DIR$/project-structure.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references.md" beforeDir="false" afterPath="$PROJECT_DIR$/references.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/dataset.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dataset.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/dataset.md" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dataset.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/dataset_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dataset_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/my_tuner.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/my_tuner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/pre_processing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -163,77 +65,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.kaggle_initializer.executor": "Run",
-    "Python.muffin-stat-keras.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
-    "git-widget-placeholder": "torch",
-    "last_opened_file_path": "/home/jacopo/PycharmProjects/muffin-stat-project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.kaggle_initializer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.muffin-stat-keras.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;torch&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jacopo/PycharmProjects/muffin-stat-project/models&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/models" />
-      <recent name="$PROJECT_DIR$/utils" />
-      <recent name="$PROJECT_DIR$/models/naive_dnn_gen/data" />
+      <recent name="$PROJECT_DIR$/models/augmented_dnn" />
+      <recent name="$PROJECT_DIR$/models/naive_dnn_gen" />
       <recent name="$PROJECT_DIR$/models/simple_cnn" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models/structure" />
       <recent name="$PROJECT_DIR$/models/naive_dnn_gen/data/3500-1350_no_aug" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/models/autotuned_dnn" />
       <recent name="$PROJECT_DIR$/models/simple_cnn" />
-      <recent name="$PROJECT_DIR$/models/naive_dnn_gen" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.muffin-stat-keras">
-    <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.kaggle_initializer">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="muffin-stat-keras" />
       <option name="ENV_FILES" value="" />
@@ -304,108 +171,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Python.FlaskServer">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Autodetect">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.muffin-stat-keras" />
       <item itemvalue="Python.kaggle_initializer" />
+      <item itemvalue="Python.muffin-stat-keras" />
     </list>
     <recent_temporary>
       <list>
@@ -454,6 +222,7 @@
       <workItem from="1713513777394" duration="142000" />
       <workItem from="1713534777318" duration="19032000" />
       <workItem from="1713563416768" duration="1755000" />
+      <workItem from="1714298788825" duration="1717000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -511,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714295604882</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="WIP">
+      <option name="closed" value="true" />
+      <created>1714295750619</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714295750619</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,16 +309,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Project Initialization V2" />
     <MESSAGE value="Project restructure 3&#10;Also started writing notebooks for each approach and started implementing functions" />
-    <MESSAGE value="WIP" />
     <MESSAGE value="Ignore update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ignore update" />
+    <MESSAGE value="WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py</url>
-          <line>48</line>
+          <line>43</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

@@ -1,0 +1,2 @@
+- Non fare distinzioni su augmented e normal come folder. Alla fine sono sempre 2layer DNN. Il pre processing
+  è semplicemente un bonus diciamo. Che volendo possiamo rendere indipendente dall'architettura.

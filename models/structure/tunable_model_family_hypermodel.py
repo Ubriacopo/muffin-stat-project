@@ -1,11 +1,19 @@
+from __future__ import annotations
 import gc
+from abc import abstractmethod
 from typing import Final
 
 import keras
 import keras_tuner
 import torch
 
-from models.structure.model_family import TunableModelFamily
+from models.structure.base_model_family import BaseModelFamily
+
+
+class TunableModelFamily(BaseModelFamily):
+    @abstractmethod
+    def load_parameters(self, hyperparameters: keras_tuner.HyperParameters):
+        pass
 
 
 class TunableModelFamilyHypermodel(keras_tuner.HyperModel):

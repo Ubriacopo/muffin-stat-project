@@ -7,13 +7,8 @@ from typing import Final
 import keras
 import keras_tuner
 
-from models.structure.model_family import ModelFamily, TunableModelFamily
+from models.structure.model_family import ModelFamily, TunableModelFamily, AugmentedModelFamily
 
-
-@dataclass
-class HiddenLayerStructure:
-    units: int
-    following_dropout: float | None
 
 
 class NaiveDNNModelFamily(ModelFamily):
