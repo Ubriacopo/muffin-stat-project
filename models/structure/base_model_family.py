@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import enum
 from abc import abstractmethod
 from dataclasses import dataclass
 from typing import Final
@@ -43,3 +44,8 @@ class BaseModelFamily:
 class HiddenLayerStructure:
     units: int
     following_dropout: float | None
+
+
+class Channels(enum.Enum):
+    channels_last: str = 'channels_last'
+    channels_first: str = 'channels_first'

@@ -41,15 +41,16 @@ class TwoHiddenLayersDNNModelFamily(BaseModelFamily):
         model.compile(optimizer=optimizer, metrics=self.metrics, loss=self.loss)
 
 
+# todo change name
 class TwoHiddenLayersTunableAugmentedDNN(TwoHiddenLayersDNNModelFamily, TunableModelFamily):
     def load_parameters(self, hp: keras_tuner.HyperParameters):
         self.hidden_layer_0 = HiddenLayerStructure(
-            hp.Int(name=f"units_0", min_value=1024, max_value=4096, step=256, default=1024),
+            hp.Int(name=f"units_0", min_value=1024, max_value=4096, step=512, default=1024),
             0.50 if hp.Boolean(name=f"dropout_0", default=False) else None
         )
 
         self.hidden_layer_1 = HiddenLayerStructure(
-            hp.Int(name=f"units_1", min_value=128, max_value=1536, step=128, default=256),
+            hp.Int(name=f"units_1", min_value=128, max_value=1536, step=256, default=256),
             0.50 if hp.Boolean(name=f"dropout_1", default=False) else None
         )
 

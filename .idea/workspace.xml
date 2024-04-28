@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="WIP">
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/two_layers_dnn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/structure/augmented_model_family.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/structure/base_model_family.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/structure/default_augmented_model_family.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/todo.md" afterDir="false" />
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Last refactor">
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/generic_conv_nn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/one_conv_nn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/two_conv_nn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/augmented_dnn/augmented_dnn_tune.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/augmented_dnn/augmented_dnn_tune.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/structure/model_family.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/two_layers_dnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/two_layers_dnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/structure/base_model_family.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/base_model_family.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,8 +169,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.kaggle_initializer" />
       <item itemvalue="Python.muffin-stat-keras" />
+      <item itemvalue="Python.kaggle_initializer" />
     </list>
     <recent_temporary>
       <list>
@@ -223,6 +220,7 @@
       <workItem from="1713534777318" duration="19032000" />
       <workItem from="1713563416768" duration="1755000" />
       <workItem from="1714298788825" duration="1717000" />
+      <workItem from="1714313886049" duration="7859000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -288,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714295750619</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Last refactor">
+      <option name="closed" value="true" />
+      <created>1714314066603</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714314066603</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +317,8 @@
     <MESSAGE value="Project restructure 3&#10;Also started writing notebooks for each approach and started implementing functions" />
     <MESSAGE value="Ignore update" />
     <MESSAGE value="WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP" />
+    <MESSAGE value="Last refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

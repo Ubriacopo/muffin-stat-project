@@ -1,15 +1,13 @@
 from __future__ import annotations
 
 from typing import Final
-
 import keras
-import keras_tuner
 
-from models.structure.model_family import ModelFamily, TunableModelFamily, \
-    FinalModelFamilyInstance
+from models.structure.base_model_family import BaseModelFamily
+from models.structure.tunable_model_family_hypermodel import TunableModelFamily
 
 
-class SimpleCnnModelFamily(ModelFamily):
+class SimpleCnnModelFamily(BaseModelFamily):
 
     def __init__(self):
         """
@@ -56,35 +54,3 @@ class SimpleCnnTunableModelFamily(SimpleCnnModelFamily, TunableModelFamily):
         ] for i in range(hyperparameters.Int(name="conv_layers", min_value=2, max_value=5))]
 
         self.hidden_units = hyperparameters.Int(name="hidden_units", min_value=32, max_value=128, default=64, step=16)
-
-
-class FinalSimpleCnnModel(FinalModelFamilyInstance):
-    """
-    todo valuta se buttarlo via
-    Best configuration parameters for the SimpleCnn are so fixed without using hyperparameters
-    or explicitly calling them. This is to better showcase the structure of keras network.
-    """
-
-    def make_layers(self, input_shape: (int, int, int)):
-        input_layer = keras.Input(shape=input_shape, name=self.name)
-
-        x = SimpleCnnModelFamily.make_conv_layer(3, 16, input_layer)
-        x = SimpleCnnModelFamily.make_conv_layer(2, 16, x)
-
-        x = keras.layers.Flatten(data_format="channels_first")(x)
-        x = keras.layers.Dense(units=32, activation='relu')(x)
-
-        output_layer = keras.layers.Dense(1, activation='sigmoid')(x)
-        return input_layer, output_layer
-
-    def compile_model(self, model: keras.Model, optimizer: str | keras.optimizers.Optimizer, **kwargs):
-        model.compile(optimizer=optimizer, metrics=['accuracy'], loss='binary_crossentropy')
-
-    def get_model(self, input_shape: (int, int, int), default_compile: bool = True) -> keras.Model:
-        model = self.make_model(input_shape)
-
-        if default_compile:
-            optimizer = keras.optimizers.Adam(lr=1e-4)
-            self.compile_model(model, optimizer)
-
-        return model
