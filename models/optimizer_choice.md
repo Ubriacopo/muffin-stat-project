@@ -16,6 +16,10 @@ Adam needs some fine tuning of parameters to really shine.
 ## Adam / AdamW
 So, while a good choice could be optiming for AdamW as it usually performs well we have to consider the memory overhead it creates in order to compute the training gradients. If the size of the network is large this can lead to real problems as the VRAM of my machine (which is the one used for all this study) is limited to only 8GB.
 
+> Dont use Adam as it may perform randomly. The parameters are too important to be left alone, they need to be fine tuned.
+> We had the issue with the loss that was spiking to ~8 and never decreasing. \
+> We might have encountered the following problem: https://arxiv.org/abs/2304.09871 (Leggi paper)
+
 ### Pro:
 - It usually performs well if well tuned
 

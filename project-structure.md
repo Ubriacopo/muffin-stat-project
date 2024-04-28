@@ -1,3 +1,5 @@
+# out of date.
+
 # Project Structure
 We approach the project and structure it following the *common reuse principle* as I believe it to be the best practice to opt for. It can be argued that the project is indeed structurally simple enough to divide it in the classic MVC structure. But navigation as I present it should feel simpler to follow in CRP.
 

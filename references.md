@@ -8,3 +8,6 @@
 
 
 >https://www.reddit.com/r/MLQuestions/comments/yddg0y/is_adding_dropout_layer_just_before_the_output/ 
+
+
+> https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf

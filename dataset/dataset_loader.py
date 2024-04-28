@@ -1,4 +1,3 @@
-import torch
 import torchvision
 
 
@@ -7,6 +6,7 @@ def dataset_loader(image_size: tuple[int, int], is_grayscale: bool = False,
         tuple[torchvision.datasets.ImageFolder, torchvision.datasets.ImageFolder]:
     """
     Load the dataset images in RGB after resizing to given image_size
+    :param data_folder_path:
     :param is_grayscale:
     :param image_size:
     :return:

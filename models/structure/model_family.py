@@ -26,7 +26,7 @@ class ModelFamily:
         pass
 
     @abstractmethod
-    def compile_model(self, model: keras.Model, optimizer: str | keras.optimizers.Optimizer):
+    def compile_model(self, model: keras.Model, optimizer: str | keras.optimizers.Optimizer | None):
         pass
 
     def make_model(self, input_shape: (int, int, int)) -> keras.Model:

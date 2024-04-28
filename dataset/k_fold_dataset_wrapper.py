@@ -1,10 +1,9 @@
 import torch
-
 from torch.utils.data import DataLoader, Subset, ConcatDataset
 from torchvision.datasets import ImageFolder
 
 
-class KFoldController:
+class KFoldDatasetWrapper:
     def __init__(self, k: int):
         """
         The class handles K-Fold cross validation as we will use the same configuration for multiple models so
@@ -35,6 +34,7 @@ class KFoldController:
                 self.split_dataset[ignored_fold])
 
 
+# not used?
 def k_fold_generator(dataset: ImageFolder, k: int):
     fold_size: int = int(len(dataset) / k)
     return torch.utils.data.random_split(dataset, [fold_size])

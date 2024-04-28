@@ -1,9 +1,10 @@
 from __future__ import annotations
-
 import keras
 from typing_extensions import deprecated
 
 
+# overkill. la definisco in riga volendo
+@deprecated
 class AugmentationProcedure:
     def __init__(self):
         self.augmentation_procedure = keras.Sequential([])

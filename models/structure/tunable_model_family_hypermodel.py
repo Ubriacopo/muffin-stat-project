@@ -24,5 +24,8 @@ class TunableModelFamilyHypermodel(keras_tuner.HyperModel):
         self.model_family.load_parameters(hyperparameters)
 
         model = self.model_family.make_model(self.input_shape)
-        self.model_family.compile_model(model, hyperparameters.get("optimizer"))
+        self.model_family.compile_model(model, keras.optimizers.SGD(
+            learning_rate=hyperparameters.Float(name="lr", min_value=1e-5, max_value=1e-3, sampling='log', step=2),
+            momentum=hyperparameters.Float(name="momentum", min_value=0.5, max_value=1, sampling='reverse_log', step=2)
+        ))
         return model
