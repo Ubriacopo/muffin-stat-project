@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Last refactor">
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/generic_conv_nn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/one_conv_nn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/two_conv_nn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/index.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/sections/0-introduction.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/sections/2-architectures-choices.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/sections/3-hyperparameters-space.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/sections/6-existing-models.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/sections/7-ensemble-method.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/two_layers_dnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/two_layers_dnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/structure/base_model_family.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/base_model_family.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,6 +224,7 @@
       <workItem from="1713563416768" duration="1755000" />
       <workItem from="1714298788825" duration="1717000" />
       <workItem from="1714313886049" duration="7859000" />
+      <workItem from="1714482153295" duration="6979000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
