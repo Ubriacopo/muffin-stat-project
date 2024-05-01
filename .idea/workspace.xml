@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Last refactor">
-      <change afterPath="$PROJECT_DIR$/report/index.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/sections/0-introduction.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/sections/2-architectures-choices.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/sections/3-hyperparameters-space.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/sections/6-existing-models.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/sections/7-ensemble-method.tex" afterDir="false" />
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="wip">
+      <change afterPath="$PROJECT_DIR$/newplot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" afterDir="false" />
     </list>
@@ -65,25 +57,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.kaggle_initializer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.muffin-stat-keras.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;torch&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jacopo/PycharmProjects/muffin-stat-project/models&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.kaggle_initializer.executor": "Run",
+    "Python.muffin-stat-keras.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
+    "git-widget-placeholder": "torch",
+    "last_opened_file_path": "/home/jacopo/PycharmProjects/muffin-stat-project/models",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/models" />
@@ -224,7 +216,8 @@
       <workItem from="1713563416768" duration="1755000" />
       <workItem from="1714298788825" duration="1717000" />
       <workItem from="1714313886049" duration="7859000" />
-      <workItem from="1714482153295" duration="6979000" />
+      <workItem from="1714482153295" duration="7427000" />
+      <workItem from="1714544490252" duration="5463000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -298,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714314066603</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="wip">
+      <option name="closed" value="true" />
+      <created>1714493846175</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714493846175</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +323,8 @@
     <MESSAGE value="Ignore update" />
     <MESSAGE value="WIP" />
     <MESSAGE value="Last refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Last refactor" />
+    <MESSAGE value="wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
