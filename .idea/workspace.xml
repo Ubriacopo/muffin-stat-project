@@ -4,24 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Various improvements and work gone further&#10;Should see if 0-1 loss impl. is ok">
-      <change afterPath="$PROJECT_DIR$/callbacks/threshold_stop_cb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/case_studies/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-rich-structure/trial_00/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_conv_net.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/muffin-stat-keras.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/muffin-stat-keras.iml" afterDir="false" />
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="WIP&#10;Done searching for parameters in the CNN case">
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/oracle.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/search.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_00/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_00/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_01/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/tuner0.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/dataset.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dataset.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-rich-structure/trial_08/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-rich-structure/trial_08/trial.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/simple_cnn/conv_net_family.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/conv_net_family.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/simple_cnn/conv_net_family_search.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/conv_net_family_search.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/hyperparameters.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/tuner-results" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/todo.md" beforeDir="false" afterPath="$PROJECT_DIR$/models/todo.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/cache_manager.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/my_tuner.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/my_tuner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +258,7 @@
       <workItem from="1714977963623" duration="3777000" />
       <workItem from="1714983529833" duration="1824000" />
       <workItem from="1714986595759" duration="5209000" />
-      <workItem from="1715029440309" duration="20681000" />
+      <workItem from="1715029440309" duration="23604000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -353,7 +348,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715062030305</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="WIP&#10;Done searching for parameters in the CNN case">
+      <option name="closed" value="true" />
+      <created>1715117443417</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715117443417</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +382,8 @@
     <MESSAGE value="Last refactor" />
     <MESSAGE value="wip" />
     <MESSAGE value="Various improvements and work gone further&#10;Should see if 0-1 loss impl. is ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Various improvements and work gone further&#10;Should see if 0-1 loss impl. is ok" />
+    <MESSAGE value="WIP&#10;Done searching for parameters in the CNN case" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP&#10;Done searching for parameters in the CNN case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -390,14 +394,19 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/zero_one_validation_loss.py</url>
           <line>35</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/miniconda3/envs/keras-pytorch/lib/python3.12/site-packages/keras/src/backend/common/variables.py</url>
+          <line>396</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook:///home/jacopo/PycharmProjects/muffin-stat-keras/models/naive_dnn_gen/auto_naive_dnn.ipynb</url>
@@ -406,7 +415,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook:///home/jacopo/PycharmProjects/muffin-stat-project/models/simple_cnn/conv_net_family_search.ipynb</url>
-          <line>205</line>
+          <line>303</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>

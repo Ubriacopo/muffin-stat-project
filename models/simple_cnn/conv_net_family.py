@@ -56,7 +56,14 @@ class ConvNetFamily(BaseModelFamily):
 
 
 class TunableConvNetFamily(ConvNetFamily, TunableModelFamily):
+    def __init__(self):
+        super().__init__()
+        self.parameters_fixed = False
+
     def load_parameters(self, hp: keras_tuner.HyperParameters):
+        if self.parameters_fixed:
+            return
+
         self.convolution_layers = []
         self.dense_layers = []
 

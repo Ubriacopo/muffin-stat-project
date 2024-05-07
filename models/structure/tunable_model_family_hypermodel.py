@@ -24,16 +24,18 @@ class TunableModelFamily(BaseModelFamily):
 
 class TunableModelFamilyHypermodel(keras_tuner.HyperModel):
 
-    def __init__(self, input_shape: (int, int, int), model_family: TunableModelFamily, tune_batch: bool = False):
+    def __init__(self, input_shape: (int, int, int), model_family: TunableModelFamily, tune_batch: bool = False,
+                 verbose: bool = True):
         super().__init__()
 
         self.input_shape: Final[(int, int, int)] = input_shape
         self.model_family: Final[TunableModelFamily] = model_family
 
         self.tune_batch = tune_batch
+        self.verbose = verbose
 
     def fit(self, hp, model, *args, **kwargs):
-        return super().fit(hp, model, *args, **kwargs) if self.tune_batch else \
+        return model.fit(*args, **kwargs) if not self.tune_batch else \
             model.fit(*args, batch_size=hp.Choice("batch_size", values=[8, 16, 32, 64]), **kwargs)
 
     def build(self, hyperparameters: keras_tuner.HyperParameters) -> keras.Model:
@@ -54,4 +56,7 @@ class TunableModelFamilyHypermodel(keras_tuner.HyperModel):
             )
 
         self.model_family.compile_model(model)
+        if self.verbose:
+            model.summary()
+
         return model
