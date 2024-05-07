@@ -5,7 +5,7 @@ import keras
 
 from models.structure.augmented_model_family import InvertedChannelsAugmentedModelFamily
 
-
+# todo change name
 class ChannelsLastFixAugmentedNaiveDNNModelFamily(InvertedChannelsAugmentedModelFamily, ABC):
 
     def make_augmentation(self, input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:

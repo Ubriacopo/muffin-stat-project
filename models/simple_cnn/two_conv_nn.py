@@ -5,19 +5,8 @@ from typing import Final
 
 import keras
 
-from models.structure.base_model_family import BaseModelFamily, Channels
-
-
-@dataclass
-class ConvLayerStructure:
-    kernel_size: tuple[int, int]
-    filters: int
-
-
-@dataclass
-class PoolLayerStructure:
-    pool_size: tuple[int, int]
-    stride: int
+from models.simple_cnn.one_conv_nn import OneConvNNModelFamily
+from models.structure.base_model_family import BaseModelFamily, Channels, ConvLayerStructure, PoolLayerStructure
 
 
 # So: Why use this and not generic?
@@ -29,28 +18,18 @@ class PoolLayerStructure:
 #           this also gets easier as we can recall it without rewriting the loop
 #       5 -  It is the result of extending previous models structure without loosing them. I could add a dense layer
 #               in between if I wanted while with generic I still need to override the class.
-class TwoConvNetFamily(BaseModelFamily):
+class TwoConvNetFamily(OneConvNNModelFamily):
 
     def __init__(self, data_format: Channels = Channels.channels_last):
         """
         Simple CNN model. CNN that is simply structured by a sequence of convolutional layers followed by
         max pooling layers. At the end we have a single Dense activation hidden layer.
         """
-        super().__init__("TwoConvNet", "binary_crossentropy")
-        self.metrics: Final[list[str]] = ["accuracy"]
-
-        self.conv_structure_0: tuple[ConvLayerStructure, PoolLayerStructure | None] = (
-            (ConvLayerStructure((16, 16), 3), PoolLayerStructure((2, 2), 2))
-        )
+        super().__init__(data_format)
 
         self.conv_structure_1: tuple[ConvLayerStructure, PoolLayerStructure | None] = (
             (ConvLayerStructure((16, 16), 2), PoolLayerStructure((2, 2), 2))
         )
-
-        self.dense_layer_units: int = 64
-
-        # If the channels are first or not.
-        self.data_format = data_format
 
     def make_layers(self, input_shape: (int, int, int)):
 
@@ -58,9 +37,7 @@ class TwoConvNetFamily(BaseModelFamily):
         in_format = self.data_format.value
 
         input_layer = keras.Input(shape=input_shape, name=self.name)
-        for _, structure in enumerate([self.conv_structure_0, self.conv_structure_1]):
-            conv, pool = structure # Unpack the values of our structure.
-
+        for conv, pool in [self.conv_structure_0, self.conv_structure_1]:
             x = keras.layers.Conv2D(filters=conv.filters, kernel_size=conv.kernel_size,
                                     data_format=in_format, activation="relu")(input_layer if x is None else x)
 
@@ -68,10 +45,7 @@ class TwoConvNetFamily(BaseModelFamily):
                 x = keras.layers.MaxPooling2D(pool_size=pool.pool_size, strides=pool.stride, data_format=in_format)(x)
 
         x = keras.layers.Flatten(data_format=self.data_format.value)(x)
-        x = keras.layers.Dense(units=self.dense_layer_units, activation='relu')(x)
+        x = keras.layers.Dense(units=self.dense_layer_0_units, activation='relu')(x)
+
         output_layer = keras.layers.Dense(1, activation='sigmoid')(x)
-
         return input_layer, output_layer
-
-    def compile_model(self, model: keras.Model, optimizer: str | keras.optimizers.Optimizer):
-        model.compile(optimizer=optimizer, metrics=self.metrics, loss=self.loss)

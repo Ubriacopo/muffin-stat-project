@@ -20,3 +20,5 @@ This was looking promising
 
 The 550-550 structure behaves like the one with 2k nodes and 1k nodes
 Overfitting slowly
+
+https://cs231n.github.io/convolutional-networks/

@@ -15,7 +15,7 @@ class SimpleCnnModelFamily(BaseModelFamily):
         max pooling layers. At the end we have a single Dense activation hidden layer.
         """
         super().__init__("SimpleCNN", "binary_crossentropy")
-        self.metrics: Final[list[str]] = ["accuracy"]
+
         # todo: Poco chiaro così. Un tipo apposito potrebbe essere più chiaro
         self.conv_layers: list[tuple[int, int]] = [(16, 3), (16, 2)]
         self.hidden_units: int = 64
@@ -38,9 +38,6 @@ class SimpleCnnModelFamily(BaseModelFamily):
         x = keras.layers.Conv2D(filters=filters, kernel_size=(kernel_size, kernel_size),
                                 padding='same', activation='relu', data_format='channels_first')(previous_layer)
         return keras.layers.MaxPooling2D(pool_size=(2, 2), strides=2, data_format='channels_first')(x)
-
-    def compile_model(self, model: keras.Model, optimizer: str | keras.optimizers.Optimizer):
-        model.compile(optimizer=optimizer, metrics=self.metrics, loss=self.loss)
 
 
 # Refactor like this https://keras.io/guides/keras_tuner/getting_started/#keep-keras-code-separate

@@ -5,9 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="wip">
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/conv_net_family_search.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand-tailored-cnn.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/newplot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/machine_limitations.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/dataset_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dataset_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/augmented_dnn/augmented_dnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/augmented_dnn/augmented_dnn_tune.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/augmented_dnn/notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/conv_net_family.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_studies.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_construction.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/three_layers_search.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/three_layers_search.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/two_layers_dnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/two_layers_dnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/one_conv_nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/one_conv_nn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/simple_cnn_study.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/simple_cnn_study.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/two_conv_nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/two_conv_nn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/structure/base_model_family.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/base_model_family.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/structure/default_augmented_model_family.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/default_augmented_model_family.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/zero_one_validation_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/zero_one_validation_loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/machine_limitations.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/muffin_chihuahua.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/muffin_chihuahua.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/references.md" beforeDir="false" afterPath="$PROJECT_DIR$/references.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/index.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -57,25 +81,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.kaggle_initializer.executor": "Run",
-    "Python.muffin-stat-keras.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
-    "git-widget-placeholder": "torch",
-    "last_opened_file_path": "/home/jacopo/PycharmProjects/muffin-stat-project/models",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.kaggle_initializer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.muffin-stat-keras.executor&quot;: &quot;Run&quot;,
+    &quot;Python.zero_one_validation_loss.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;torch&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jacopo/PycharmProjects/muffin-stat-project/models&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/models" />
@@ -85,14 +110,14 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils" />
       <recent name="$PROJECT_DIR$/models/structure" />
       <recent name="$PROJECT_DIR$/models/naive_dnn_gen/data/3500-1350_no_aug" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/models/autotuned_dnn" />
-      <recent name="$PROJECT_DIR$/models/simple_cnn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.kaggle_initializer">
+  <component name="RunManager" selected="Python.zero_one_validation_loss">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="muffin-stat-keras" />
       <option name="ENV_FILES" value="" />
@@ -163,12 +188,37 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="zero_one_validation_loss" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="muffin-stat-keras" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/zero_one_validation_loss.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.muffin-stat-keras" />
+      <item itemvalue="Python.zero_one_validation_loss" />
       <item itemvalue="Python.kaggle_initializer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.zero_one_validation_loss" />
         <item itemvalue="Python.kaggle_initializer" />
       </list>
     </recent_temporary>
@@ -176,8 +226,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
-        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
+        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
       </set>
     </attachedChunks>
   </component>
@@ -218,6 +268,12 @@
       <workItem from="1714313886049" duration="7859000" />
       <workItem from="1714482153295" duration="7427000" />
       <workItem from="1714544490252" duration="5463000" />
+      <workItem from="1714566678006" duration="9284000" />
+      <workItem from="1714937975203" duration="2101000" />
+      <workItem from="1714977963623" duration="3777000" />
+      <workItem from="1714983529833" duration="1824000" />
+      <workItem from="1714986595759" duration="5209000" />
+      <workItem from="1715029440309" duration="2541000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -336,13 +392,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py</url>
-          <line>27</line>
+          <line>33</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/zero_one_validation_loss.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook:///home/jacopo/PycharmProjects/muffin-stat-keras/models/naive_dnn_gen/auto_naive_dnn.ipynb</url>
           <line>108</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook:///home/jacopo/PycharmProjects/muffin-stat-project/models/simple_cnn/conv_net_family_search.ipynb</url>
+          <line>110</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -354,5 +420,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/muffin_stat_keras$muffin_stat_keras.coverage" NAME="muffin-stat-keras Coverage Results" MODIFIED="1709566161289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/muffin_stat_project$zero_one_validation_loss.coverage" NAME="zero_one_validation_loss Coverage Results" MODIFIED="1714988422883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
   </component>
 </project>

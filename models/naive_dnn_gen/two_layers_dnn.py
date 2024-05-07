@@ -14,8 +14,8 @@ class TwoHiddenLayersDNNModelFamily(BaseModelFamily):
     def __init__(self):
         super().__init__("AugmentedDNN", "binary_crossentropy")
 
-        self.hidden_layer_0 = HiddenLayerStructure(units=2048, following_dropout=0.5)
-        self.hidden_layer_1 = HiddenLayerStructure(units=720, following_dropout=0.5)
+        self.hidden_layer_0: HiddenLayerStructure = HiddenLayerStructure(units=2048, following_dropout=0.5)
+        self.hidden_layer_1: HiddenLayerStructure = HiddenLayerStructure(units=720, following_dropout=0.5)
 
         self.metrics: Final[list[str]] = ["accuracy"]
 

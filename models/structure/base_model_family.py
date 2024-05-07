@@ -8,6 +8,11 @@ from typing import Final
 import keras
 
 
+class Channels(enum.Enum):
+    channels_last: str = 'channels_last'
+    channels_first: str = 'channels_first'
+
+
 class BaseModelFamily:
     """
     A learning algorithm with one or more hyperparameters is not really an algorithm, but rather
@@ -18,9 +23,13 @@ class BaseModelFamily:
     to be an instance of the many possible of its family.
     """
 
-    def __init__(self, family_name: str, loss: str):
+    def __init__(self, family_name: str, loss: str, metrics: list[str] = None,
+                 data_format: Channels = Channels.channels_first):
         self.name: Final[str] = family_name
         self.loss: Final[str] = loss
+
+        self.metrics: Final[list[str]] = metrics if metrics is not None else ["accuracy"]
+        self.data_format: Final[Channels] = data_format
 
     @abstractmethod
     def make_layers(self, input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:
@@ -31,9 +40,9 @@ class BaseModelFamily:
         """
         pass
 
-    @abstractmethod
-    def compile_model(self, model: keras.Model, optimizer: str | keras.optimizers.Optimizer | None):
-        pass
+    def compile_model(self, model: keras.Model):
+        model.compile(optimizer=keras.optimizers.SGD(learning_rate=1e-4, momentum=0.9, nesterov=True),
+                      metrics=self.metrics, loss=self.loss)
 
     def make_model(self, input_shape: (int, int, int)) -> keras.Model:
         input_layer, output_layer = self.make_layers(input_shape=input_shape)
@@ -46,6 +55,13 @@ class HiddenLayerStructure:
     following_dropout: float | None
 
 
-class Channels(enum.Enum):
-    channels_last: str = 'channels_last'
-    channels_first: str = 'channels_first'
+@dataclass
+class ConvLayerStructure:
+    kernel_size: tuple[int, int]
+    filters: int
+
+
+@dataclass
+class PoolLayerStructure:
+    pool_size: tuple[int, int]
+    stride: int

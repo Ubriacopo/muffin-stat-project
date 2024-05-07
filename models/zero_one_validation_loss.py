@@ -13,7 +13,6 @@ def zero_one_loss(y_true, y_pred):
     try:
         y_predicted_max = torch.stack([torch.argmax(y_pred[i]) for i in range(len(y_pred))])
         return (ops.not_equal(y_predicted_max, y_true).sum() / len(y_pred)).clone().detach()
-        # return torch.tensor(ops.not_equal(y_predicted_max, y_true).sum() / len(y_pred), dtype=torch.float32)
     except Exception as e:
         print("Oops!  That was no valid number.  Try again...")
         print(e)
@@ -28,9 +27,17 @@ def zero_one_loss_binary(y_true, y_pred):
     :return: zero one loss
     """
     try:
-        y_predicted_max = torch.stack([torch.round(y_pred[i]) for i in range(len(y_pred))])
-        return (ops.not_equal(y_predicted_max, y_true).sum() / len(y_pred)).clone().detach()
+        # The statistical risk with respect to the zero-one loss ℓ(y, yb) = I{yb ̸= y} is therefore defined:
+        return (y_pred >= 0.5).not_equal(y_true).sum() / len(y_pred)
+
+        # Can't use torch.round()
+
+        # y_predicted_max = torch.stack([torch.round(y_pred[i]) for i in range(len(y_pred))])
+        # return (ops.not_equal(y_predicted_max, y_true).sum() / len(y_pred)).clone().detach()
         # return torch.tensor(ops.not_equal(y_predicted_max, y_true).sum() / len(y_pred), dtype=torch.float32)
     except Exception as e:
         print("Oops!  That was no valid number.  Try again...")
         print(e)
+
+
+zero_one_loss_binary(torch.FloatTensor([0, 0, 1]), torch.FloatTensor([0.3, 0.1, 0.5]))

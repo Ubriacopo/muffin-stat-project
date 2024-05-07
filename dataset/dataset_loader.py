@@ -2,7 +2,7 @@ import torchvision
 
 
 def dataset_loader(image_size: tuple[int, int], is_grayscale: bool = False,
-                   data_folder_path: str = "../../data") -> \
+                   normalization: bool = False, data_folder_path: str = "../../data") -> \
         tuple[torchvision.datasets.ImageFolder, torchvision.datasets.ImageFolder]:
     """
     Load the dataset images in RGB after resizing to given image_size
@@ -15,6 +15,9 @@ def dataset_loader(image_size: tuple[int, int], is_grayscale: bool = False,
     transforms.append(torchvision.transforms.Grayscale()) if is_grayscale else None
     transforms.append(torchvision.transforms.Resize((image_size[0], image_size[1])))
     transforms.append(torchvision.transforms.ToTensor())
+
+    if normalization:
+        transforms.append(torchvision.transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]))
 
     loading_transforms = torchvision.transforms.Compose(transforms)
     train_dataset = torchvision.datasets.ImageFolder(f"{data_folder_path}/train", transform=loading_transforms)
