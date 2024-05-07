@@ -18,3 +18,15 @@ class HistoryDeletingBayesianOptimization(keras_tuner.BayesianOptimization):
             os.remove(filename)
 
         return super().run_trial(trial, *args, **kwargs)
+
+
+class HistoryDeletingRandomSearch(keras_tuner.RandomSearch):
+    def __init__(self, hypermodel, **kwargs):
+        super().__init__(hypermodel, **kwargs)
+
+    def run_trial(self, trial, *args, **kwargs):
+        # Remove previous iterations models if there are any
+        for filename in glob.iglob(f'{self.directory}/**/*.h5', recursive=True):
+            os.remove(filename)
+
+        return super().run_trial(trial, *args, **kwargs)

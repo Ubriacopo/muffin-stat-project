@@ -4,34 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/conv_net_family_search.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand-tailored-cnn.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newplot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/machine_limitations.ipynb" afterDir="false" />
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Various improvements and work gone further&#10;Should see if 0-1 loss impl. is ok">
+      <change afterPath="$PROJECT_DIR$/callbacks/threshold_stop_cb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/case_studies/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-rich-structure/trial_00/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_conv_net.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/muffin-stat-keras.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/muffin-stat-keras.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/dataset_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dataset_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/augmented_dnn/augmented_dnn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/augmented_dnn/augmented_dnn_tune.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/augmented_dnn/notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/conv_net_family.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_studies.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_construction.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/three_layers_search.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/three_layers_search.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/two_layers_dnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/two_layers_dnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/one_conv_nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/one_conv_nn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/simple_cnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/simple_cnn_study.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/simple_cnn_study.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/two_conv_nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/two_conv_nn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/structure/base_model_family.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/base_model_family.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/structure/default_augmented_model_family.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/default_augmented_model_family.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/dataset.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dataset.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/conv_net_family.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/conv_net_family.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/conv_net_family_search.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/conv_net_family_search.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/hyperparameters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/tuner-results" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/zero_one_validation_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/zero_one_validation_loss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/machine_limitations.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/muffin_chihuahua.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/muffin_chihuahua.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references.md" beforeDir="false" afterPath="$PROJECT_DIR$/references.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/index.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/todo.md" beforeDir="false" afterPath="$PROJECT_DIR$/models/todo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/cache_manager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/my_tuner.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/my_tuner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -81,26 +71,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.kaggle_initializer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.muffin-stat-keras.executor&quot;: &quot;Run&quot;,
-    &quot;Python.zero_one_validation_loss.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;torch&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jacopo/PycharmProjects/muffin-stat-project/models&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.kaggle_initializer.executor": "Run",
+    "Python.muffin-stat-keras.executor": "Run",
+    "Python.zero_one_validation_loss.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
+    "git-widget-placeholder": "torch",
+    "last_opened_file_path": "/home/jacopo/PycharmProjects/muffin-stat-project/models",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/models" />
@@ -273,7 +263,7 @@
       <workItem from="1714977963623" duration="3777000" />
       <workItem from="1714983529833" duration="1824000" />
       <workItem from="1714986595759" duration="5209000" />
-      <workItem from="1715029440309" duration="2541000" />
+      <workItem from="1715029440309" duration="20681000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -355,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714493846175</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Various improvements and work gone further&#10;Should see if 0-1 loss impl. is ok">
+      <option name="closed" value="true" />
+      <created>1715062030305</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715062030305</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +378,8 @@
     <MESSAGE value="WIP" />
     <MESSAGE value="Last refactor" />
     <MESSAGE value="wip" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip" />
+    <MESSAGE value="Various improvements and work gone further&#10;Should see if 0-1 loss impl. is ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Various improvements and work gone further&#10;Should see if 0-1 loss impl. is ok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -392,7 +391,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/structure/tunable_model_family_hypermodel.py</url>
-          <line>33</line>
+          <line>39</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -407,7 +406,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook:///home/jacopo/PycharmProjects/muffin-stat-project/models/simple_cnn/conv_net_family_search.ipynb</url>
-          <line>110</line>
+          <line>205</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>

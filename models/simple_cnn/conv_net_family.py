@@ -60,7 +60,7 @@ class TunableConvNetFamily(ConvNetFamily, TunableModelFamily):
         self.convolution_layers = []
         self.dense_layers = []
 
-        for i in range(hp.Int("convolution_layers", min_value=1, max_value=2)):
+        for i in range(hp.Int("convolution_layers", min_value=1, max_value=4)):
             filters = hp.Int(f"filters_{i}", min_value=16, max_value=256, step=2, sampling='log')
             kernel_size = hp.Choice(f"kernel_{i}", values=[3, 5], default=3)
 
@@ -68,6 +68,6 @@ class TunableConvNetFamily(ConvNetFamily, TunableModelFamily):
                                             PoolLayerStructure(pool_size=(2, 2), stride=2)))
 
         for i in range(hp.Int("hidden_layers", min_value=1, max_value=3)):
-            units = hp.Int(name=f"units_{i}", min_value=32, max_value=128, step=2, sampling='log')
+            units = hp.Int(name=f"units_{i}", min_value=32, max_value=256, step=2, sampling='log')
             follow_dropout = 0.50 if hp.Boolean(name=f"dropout_{i}", default=False) else None
             self.dense_layers.append(HiddenLayerStructure(units, follow_dropout))
