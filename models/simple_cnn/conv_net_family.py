@@ -1,37 +1,27 @@
 from __future__ import annotations
 
-from typing import Final
-
 import keras
 import keras_tuner
 
-from models.structure.base_model_family import BaseModelFamily, Channels, HiddenLayerStructure, ConvLayerStructure, \
-    PoolLayerStructure
-from models.structure.tunable_model_family_hypermodel import TunableModelFamily
+from models.structure.base_model_wrapper import BaseModelWrapper
+from models.structure.layer_structure_data import ConvLayerStructure, PoolLayerStructure, HiddenLayerStructure
+from models.structure.tunable_wrapper import TunableWrapperBase
 
 
-class ConvNetFamily(BaseModelFamily):
-
-    def __init__(self):
-        """
-        Simple CNN model. CNN that is simply structured by a sequence of convolutional layers followed by
-        max pooling layers. At the end we have a single Dense activation hidden layer.
-        """
-        super().__init__("TwoConvNet", "binary_crossentropy")
-        self.convolution_layers: list[tuple[ConvLayerStructure, PoolLayerStructure | None]] = [
-            (ConvLayerStructure((16, 16), 3), PoolLayerStructure((2, 2), 2)),
-            (ConvLayerStructure((16, 16), 2), PoolLayerStructure((2, 2), 2)),
-        ]
-
-        self.dense_layers: list[HiddenLayerStructure] = [
-            HiddenLayerStructure(64, None),
-        ]
+class ConvNetFamily(BaseModelWrapper):
+    convolution_layers: list[tuple[ConvLayerStructure, PoolLayerStructure | None]] = [
+        (ConvLayerStructure((16, 16), 3), PoolLayerStructure((2, 2), 2)),
+        (ConvLayerStructure((16, 16), 2), PoolLayerStructure((2, 2), 2)),
+    ]
+    dense_layers: list[HiddenLayerStructure] = [
+        HiddenLayerStructure(64, None),
+    ]
 
     def make_layers(self, input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:
         x = None
 
         # Structure ins ((CONV -> MAX_POOL) x i) -> ((DENSE -> DROPOUT?) x j) -> DENSE
-        input_layer = keras.Input(shape=input_shape, name=self.name)
+        input_layer = keras.Input(shape=input_shape, name=self.__class__.__name__)
         for conv, pool in self.convolution_layers:
             # Convolution layer
             x = (keras.layers.Conv2D(filters=conv.filters, kernel_size=conv.kernel_size, padding='same',
@@ -55,10 +45,8 @@ class ConvNetFamily(BaseModelFamily):
         return input_layer, output_layer
 
 
-class TunableConvNetFamily(ConvNetFamily, TunableModelFamily):
-    def __init__(self):
-        super().__init__()
-        self.parameters_fixed = False
+class TunableConvNetFamily(ConvNetFamily, TunableWrapperBase):
+    parameters_fixed = False
 
     def load_parameters(self, hp: keras_tuner.HyperParameters):
         if self.parameters_fixed:

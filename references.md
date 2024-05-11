@@ -19,3 +19,10 @@
 >https://www.reddit.com/r/computervision/comments/th250w/why_are_most_kernels_convolution_masks_3_by_3_in/
 
 >https://stats.stackexchange.com/questions/164876/what-is-the-trade-off-between-batch-size-and-number-of-iterations-to-train-a-neu
+
+
+
+> https://www.youtube.com/watch?app=desktop&v=XXFLFWHP9Nc
+
+
+> https://scikit-learn.org/stable/modules/cross_validation.html

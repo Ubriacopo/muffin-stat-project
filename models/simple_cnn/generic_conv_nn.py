@@ -7,7 +7,7 @@ import keras_tuner
 
 from models.simple_cnn.two_conv_nn import ConvLayerStructure, PoolLayerStructure
 from models.structure.base_model_family import BaseModelFamily, Channels
-from models.structure.default_augmented_model_family import ChannelsLastFixAugmentedNaiveDNNModelFamily
+from models.structure.default_augmented_model_family import InvertedChannelsAugmentedBasicModelFamily
 from models.structure.tunable_model_family_hypermodel import TunableModelFamily
 
 # I feel like this is not flexible enough
@@ -79,7 +79,7 @@ class GenericConvTunableNetFamily(GenericConvNetFamily, TunableModelFamily):
         ]
 
 
-class GenericConvTunableNetAugModelFamily(GenericConvTunableNetFamily, ChannelsLastFixAugmentedNaiveDNNModelFamily):
+class GenericConvTunableNetAugModelFamily(GenericConvTunableNetFamily, InvertedChannelsAugmentedBasicModelFamily):
     def __init__(self):
         super().__init__("TwoConvNet", "binary_crossentropy")
         # todo move higher in hierachy so we dont have to manually do it

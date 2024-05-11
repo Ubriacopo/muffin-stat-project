@@ -7,3 +7,4 @@ anche una loss function cosi posso settare from logit etc
 - Cambia nome a ChannelsLastFixAugmentedNaiveDNNModelFamily
 - zero-one loss is on CPU avoid it.
 - Sistema il file di conv_net_family. Ne farei diversi sinceramente
+- #### todo refactor to basemodel? change name
