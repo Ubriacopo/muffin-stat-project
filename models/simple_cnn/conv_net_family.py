@@ -10,8 +10,8 @@ from models.structure.tunable_wrapper import TunableWrapperBase
 
 class ConvNetFamily(BaseModelWrapper):
     convolution_layers: list[tuple[ConvLayerStructure, PoolLayerStructure | None]] = [
-        (ConvLayerStructure((16, 16), 3), PoolLayerStructure((2, 2), 2)),
-        (ConvLayerStructure((16, 16), 2), PoolLayerStructure((2, 2), 2)),
+        (ConvLayerStructure((3, 3), 16), PoolLayerStructure((2, 2), 2)),
+        (ConvLayerStructure((3, 3), 32), PoolLayerStructure((2, 2), 2)),
     ]
     dense_layers: list[HiddenLayerStructure] = [
         HiddenLayerStructure(64, None),

@@ -2,9 +2,10 @@ from abc import abstractmethod, ABC
 
 import keras
 
-from models.structure.base_model_wrapper import BaseModelWrapper
+from models.structure.base_model_wrapper import BaseModelWrapper, Channels
 
 
+# https://keras.io/examples/vision/image_classification_from_scratch/
 class AugmentationWrapperBase(BaseModelWrapper):
     @abstractmethod
     def make_augmentation(self, input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:
@@ -16,6 +17,10 @@ class AugmentationWrapperBase(BaseModelWrapper):
 
 
 class InvertedChannelsAugmentationWrapper(AugmentationWrapperBase, ABC):
+
+    def __init__(self):
+        super().__init__(data_format=Channels.channels_last)
+
     def make_model(self, input_shape: (int, int, int)) -> keras.Model:
         C, W, H = input_shape  # Channels / Width / Height
 
@@ -41,3 +46,16 @@ class BasicInvertedChannelsAugmentationWrapper(InvertedChannelsAugmentationWrapp
         x = keras.layers.RandomFlip(mode="horizontal_and_vertical")(x)
 
         return input_layer, x
+
+
+class InvertedAugmentationWrapper(InvertedChannelsAugmentationWrapper, ABC):
+    def make_augmentation(self, input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:
+        input_layer = keras.Input(shape=input_shape, name=self.__class__.__name__)
+        x = keras.layers.Permute(dims=(2, 3, 1))(input_layer)  # Channels Last
+
+        # x = keras.layers.RandomBrightness(0.2)(x)
+        x = keras.layers.RandomFlip(mode="horizontal_and_vertical")(x)
+        x = keras.layers.RandomRotation(0.3)(x)
+
+        return input_layer, x
+

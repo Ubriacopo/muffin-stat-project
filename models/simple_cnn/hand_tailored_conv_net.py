@@ -19,3 +19,5 @@ class HandTailoredConvNetV1(BaseModelWrapper):
 
         output_layer = keras.layers.Dense(units=1, activation="sigmoid")(x)
         return input_layer, output_layer
+
+
