@@ -1,4 +1,9 @@
-/models/naive_dnn_gen/naive_dnn_search/
-/models/simple_cnn/cnn_search/standard_image/
-/models/augmented_dnn/augmented-dnn-search/
-/models/naive_dnn_gen/dnn-search/
+# Project exclude paths
+/data/test/
+/data/muffin-vs-chihuahua-image-classification.zip
+/data/train/
+/mod-gen/
+/notebooks/kaggle.json
+/notebooks/data
+kaggle.json
+/**/**.keras
