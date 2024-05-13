@@ -1,7 +1,7 @@
 import keras
 from models.structure.base_model_wrapper import BaseModelWrapper
 
-
+# todo togli da qui e lascia solo su notebook?
 class HandTailoredConvNetV1(BaseModelWrapper):
     def make_layers(self, input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:
         input_layer = keras.Input(shape=input_shape, name=self.__class__.__name__)
