@@ -4,182 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="TODO: Open issues">
-      <change afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/augmented-dnn-search/two-layers-192-192/oracle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/augmented-dnn-search/two-layers-192-192/search.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/augmented-dnn-search/two-layers-192-192/trial_00/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/augmented-dnn-search/two-layers-192-192/trial_01/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/augmented-dnn-search/two-layers-192-192/trial_01/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/augmented-dnn-search/two-layers-192-192/trial_02/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/naive_dnn_gen/augmented-dnn-search/two-layers-192-192/tuner0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/oracle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/search.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_00/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_00/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_01/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_01/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_02/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_02/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_03/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_03/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_04/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_04/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_05/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_05/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_06/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_06/trial.json" afterDir="false" />
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="WIP">
       <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_07/checkpoint.weights.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_07/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/tuner0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/best_params_search.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/oracle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/search.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_00/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_00/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_01/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_01/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_02/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_02/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_03/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_03/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_04/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_04/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_05/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_05/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_06/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_06/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_07/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_07/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_08/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_08/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_09/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_09/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_10/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_10/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_11/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_11/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_12/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_12/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_13/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_13/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_14/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_14/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_15/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_15/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_16/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_16/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_17/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_17/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_18/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_18/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_19/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_19/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_25/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_26/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_26/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_27/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_27/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_28/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_28/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_29/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/trial_29/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/tuner0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_00/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_01/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_01/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_02/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_02/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_03/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_03/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_04/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_04/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_05/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_05/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_06/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_06/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_07/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_07/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_08/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_08/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_09/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_09/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_10/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_10/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_11/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_11/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_12/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_12/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_13/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_13/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_14/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_14/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_15/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_15/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_16/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_16/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_17/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_17/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_18/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_18/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_19/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_19/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_20/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_20/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_21/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_21/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_22/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_22/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_23/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_23/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_24/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_24/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_25/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_25/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_26/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_26/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_27/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_27/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_28/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_28/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_29/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_29/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_30/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_30/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_31/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_31/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_32/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_32/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_33/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_33/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_34/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_34/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_35/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_35/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_36/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_36/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_37/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_37/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_38/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_38/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_39/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_39/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_40/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/tuner0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand-tailored-cnn-dropout-deeper.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand-tailored-cnn-dropout.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/oracle.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/search.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_00/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_00/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_01/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_01/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_02/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_02/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_03/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_04/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_05/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_05/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_06/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_06/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_07/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_07/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_08/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_08/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_09/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_09/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/tuner0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/start_hyperparameters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/hand-tailored-dnn.log" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/hand-tailored-dnn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp-env/search.log" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp-env/search.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/best_params_search_aug.log" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp-env/best_params_search_aug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/oracle.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/oracle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/search.log" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/search.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_00/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-8-hp/trial_00/trial.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-rich-structure/search.log" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-rich-structure/search.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/conv_net_family_model_40.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/conv_net_family_model_40.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/conv_net_family_model_8.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/conv_net_family_model_8.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_studies.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/hand-tailored-dnn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/hand-tailored-dnn.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_construction.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/some-name.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/three_layers_search.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/two_layers_dnn.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/simple_cnn/hand-tailored-cnn.log" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/hand-tailored-cnn.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_conv_net.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_conv_net.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_conv_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_conv_net.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_conv_net.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_conv_net.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/structure/tunable_hypermodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/tunable_hypermodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/kaggle_initializer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/kaggle_initializer.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/references.md" beforeDir="false" afterPath="$PROJECT_DIR$/references.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,6 +82,11 @@
     &quot;accountId&quot;: &quot;de7acb26-1434-42f7-a80c-3b09f124c628&quot;
   }
 }</component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -245,7 +117,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -265,42 +137,7 @@
       <recent name="$PROJECT_DIR$/models/naive_dnn_gen/data/3500-1350_no_aug" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.zero_one_validation_loss">
-    <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.kaggle_initializer">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="muffin-stat-keras" />
       <option name="ENV_FILES" value="" />
@@ -394,67 +231,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Python.FlaskServer">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="muffin-stat-keras" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.muffin-stat-keras" />
       <item itemvalue="Python.zero_one_validation_loss" />
@@ -462,8 +238,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.zero_one_validation_loss" />
         <item itemvalue="Python.kaggle_initializer" />
+        <item itemvalue="Python.zero_one_validation_loss" />
       </list>
     </recent_temporary>
   </component>
@@ -526,6 +302,9 @@
       <workItem from="1715412467121" duration="8287000" />
       <workItem from="1715444818862" duration="10165000" />
       <workItem from="1715502286201" duration="6410000" />
+      <workItem from="1715691496991" duration="5834000" />
+      <workItem from="1715697943989" duration="9131000" />
+      <workItem from="1715752602088" duration="157000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -647,7 +426,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715580494772</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="WIP">
+      <option name="closed" value="true" />
+      <created>1715580647146</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715580647146</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,14 +456,14 @@
     <MESSAGE value="Project Initialization V2" />
     <MESSAGE value="Project restructure 3&#10;Also started writing notebooks for each approach and started implementing functions" />
     <MESSAGE value="Ignore update" />
-    <MESSAGE value="WIP" />
     <MESSAGE value="Last refactor" />
     <MESSAGE value="wip" />
     <MESSAGE value="Various improvements and work gone further&#10;Should see if 0-1 loss impl. is ok" />
     <MESSAGE value="WIP&#10;Done searching for parameters in the CNN case" />
     <MESSAGE value="Ignore keras build" />
     <MESSAGE value="TODO: Open issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="TODO: Open issues" />
+    <MESSAGE value="WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

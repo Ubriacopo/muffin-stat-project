@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import gc
 from typing import Final
 
@@ -7,13 +9,14 @@ import torch
 from keras_tuner import HyperModel
 from torch.utils.data import DataLoader
 
+from models.structure.base_model_wrapper import BaseModelWrapper
 from models.structure.learning_parameters.tunable_learning_parameters import \
     TunableLearningParameters
 from models.structure.tunable_wrapper import TunableWrapperBase
 
 
 class TunableHyperModel(HyperModel):
-    def __init__(self, model_structure: TunableWrapperBase, learn_params: TunableLearningParameters,
+    def __init__(self, model_structure: TunableWrapperBase | BaseModelWrapper, learn_params: TunableLearningParameters,
                  input_shape: (int, int, int), tune_batch: bool = False, verbose: bool = True):
         super().__init__()
 
@@ -52,7 +55,10 @@ class TunableHyperModel(HyperModel):
         torch.cuda.empty_cache()
         gc.collect()
 
-        self.model_structure.load_parameters(hyperparameters)
+        if isinstance(self.model_structure, TunableWrapperBase):
+            print("Given model is tunable")
+            self.model_structure.load_parameters(hyperparameters)
+
         self.learning_parameters.load_parameters(hyperparameters)
 
         model = self.model_structure.make_model(self.input_shape)
@@ -62,7 +68,7 @@ class TunableHyperModel(HyperModel):
         # Real estimate is 2077966336, but we take that -10% to be sure (memory fluctuations)
         if num_params > 1870169702:
             # When this error is raised, it skips the retries as memory not sufficient
-            raise keras_tuner.errors.FailedTrialError(   f"Model too large! It contains {num_params} params.")
+            raise keras_tuner.errors.FailedTrialError(f"Model too large! It contains {num_params} params.")
 
         self.learning_parameters.compile_model(model)
         if self.verbose: model.summary()

@@ -26,3 +26,6 @@
 
 
 > https://scikit-learn.org/stable/modules/cross_validation.html
+
+
+> https://stats.stackexchange.com/questions/258166/good-accuracy-despite-high-loss-value

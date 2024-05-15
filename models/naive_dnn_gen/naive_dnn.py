@@ -20,8 +20,8 @@ class NaiveDnnWrapper(BaseModelWrapper):
 
         for layer_information in self.hidden_layers:
             x = keras.layers.Dense(units=layer_information.units, activation="relu")(x)
-            x = (keras.layers.Dropout(rate=layer_information.following_dropout)
-                 (x)) if layer_information.following_dropout is not None else x
+            x = (keras.layers.Dropout(rate=layer_information.following_dropout)(
+                x)) if layer_information.following_dropout is not None else x
 
         output_layer = keras.layers.Dense(units=1, activation='sigmoid')(x)
         return input_layer, output_layer
