@@ -5,48 +5,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="WIP">
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/cnn_search/random-search-best-40-hp/trial_07/checkpoint.weights.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand-tailored-cnn-dropout-deeper.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand-tailored-cnn-dropout.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/oracle.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/search.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_00/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_00/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_01/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_01/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_02/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_02/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_03/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_04/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_05/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_05/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_06/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_06/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_07/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_07/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_08/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_08/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_09/build_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_09/trial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/tuner0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/start_hyperparameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/conv_network/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_aug_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v2_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/deep_network/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/deep_network/deep_network_construction.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/deep_network/hand_tailored_small_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/deep_network/hand_tailored_v1_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/how_it_was_done.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/end-model.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_10/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_10/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_11/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_11/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_12/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_12/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_13/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_13/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_14/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_14/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_15/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_15/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_16/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_16/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_17/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_17/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_18/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_18/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_19/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_19/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_20/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_20/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_21/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_21/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_22/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_22/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_23/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_23/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_24/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_24/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_25/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_25/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_26/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_26/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_27/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_27/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_28/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_28/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_29/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_29/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_30/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_30/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_31/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_31/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_32/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_32/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_33/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_33/trial.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_34/build_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/trial_34/trial.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_studies.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/hand-tailored-dnn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/hand-tailored-dnn.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/naive_dnn_construction.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/some-name.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/three_layers_search.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/two_layer_dnn_search.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/naive_dnn_gen/two_layers_dnn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/hand-tailored-cnn.log" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/hand-tailored-cnn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/conv_net_family_model_8.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/conv_net_family_model_8.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/oracle.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/oracle.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/search.log" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_cnn/learning_parameters_search/search.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_conv_net.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_conv_net.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_conv_net.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/simple_cnn/hand_tailored_conv_net.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/structure/tunable_hypermodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/tunable_hypermodel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/kaggle_initializer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/kaggle_initializer.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references.md" beforeDir="false" afterPath="$PROJECT_DIR$/references.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/structure/augmentation_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/augmentation_wrapper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +83,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -117,7 +143,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -304,7 +330,8 @@
       <workItem from="1715502286201" duration="6410000" />
       <workItem from="1715691496991" duration="5834000" />
       <workItem from="1715697943989" duration="9131000" />
-      <workItem from="1715752602088" duration="157000" />
+      <workItem from="1715752602088" duration="23506000" />
+      <workItem from="1715810498676" duration="2883000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -434,7 +461,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715580647146</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="WIP">
+      <option name="closed" value="true" />
+      <created>1715752799467</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1715752799467</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -11,9 +11,24 @@ class AugmentationWrapperBase(BaseModelWrapper):
     def make_augmentation(self, input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:
         pass
 
-    @abstractmethod
     def make_model(self, input_shape: (int, int, int)) -> keras.Model:
-        pass
+        """
+        Creates the model by combining the augmentation procedure before the model passage.
+        :param input_shape: the shape of the input. The input_shape is not allowed to change in between the
+        creation of augmentation model and the actual model. If this is required the class has to be extended.
+        :return: the keras model.
+        """
+        augmentation_input, augmentation_output = self.make_augmentation(input_shape=input_shape)
+        augmentation_model = keras.Model(augmentation_input, augmentation_output)
+
+        input_layer, output_layer = self.make_layers(input_shape=input_shape)
+        base_model = keras.Model(input_layer, output_layer)
+
+        final_model_input = keras.Input(shape=input_shape, name=self.__class__.__name__)
+        x = augmentation_model(final_model_input)
+
+        final_model_output_layer = base_model(x)
+        return keras.Model(inputs=final_model_input, outputs=final_model_output_layer)
 
 
 class InvertedChannelsAugmentationWrapper(AugmentationWrapperBase, ABC):
@@ -58,4 +73,3 @@ class InvertedAugmentationWrapper(InvertedChannelsAugmentationWrapper, ABC):
         x = keras.layers.RandomRotation(0.3)(x)
 
         return input_layer, x
-
