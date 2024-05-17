@@ -10,20 +10,22 @@ from keras_tuner import HyperModel
 from torch.utils.data import DataLoader
 
 from models.structure.base_model_wrapper import BaseModelWrapper
+from models.structure.learning_parameters.learning_parameters import LearningParameters
 from models.structure.learning_parameters.tunable_learning_parameters import \
     TunableLearningParameters
 from models.structure.tunable_wrapper import TunableWrapperBase
 
 
 class TunableHyperModel(HyperModel):
-    def __init__(self, model_structure: TunableWrapperBase | BaseModelWrapper, learn_params: TunableLearningParameters,
+    def __init__(self, model_structure:  BaseModelWrapper | TunableWrapperBase,
+                 learn_params: LearningParameters | TunableLearningParameters,
                  input_shape: (int, int, int), tune_batch: bool = False, verbose: bool = True):
         super().__init__()
 
         self.input_shape: Final[(int, int, int)] = input_shape
 
-        self.model_structure: Final[TunableWrapperBase] = model_structure
-        self.learning_parameters: Final[TunableLearningParameters] = learn_params
+        self.model_structure: Final[BaseModelWrapper | TunableWrapperBase] = model_structure
+        self.learning_parameters: Final[LearningParameters | TunableLearningParameters] = learn_params
 
         self.tune_batch = tune_batch
         self.verbose = verbose
@@ -58,8 +60,9 @@ class TunableHyperModel(HyperModel):
         if isinstance(self.model_structure, TunableWrapperBase):
             print("Given model is tunable")
             self.model_structure.load_parameters(hyperparameters)
-
-        self.learning_parameters.load_parameters(hyperparameters)
+        if isinstance(self.learning_parameters, TunableLearningParameters):
+            print("Given learning parameters are tunable")
+            self.learning_parameters.load_parameters(hyperparameters)
 
         model = self.model_structure.make_model(self.input_shape)
 
@@ -71,6 +74,6 @@ class TunableHyperModel(HyperModel):
             raise keras_tuner.errors.FailedTrialError(f"Model too large! It contains {num_params} params.")
 
         self.learning_parameters.compile_model(model)
-        if self.verbose: model.summary()
+        if self.verbose: model.summary(expand_nested=True)
 
         return model

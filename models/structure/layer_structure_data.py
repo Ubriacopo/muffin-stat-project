@@ -1,4 +1,4 @@
-from __future__ import annotations
+from __future__ import annotationsKerasTuner
 
 from dataclasses import dataclass
 
@@ -6,7 +6,11 @@ from dataclasses import dataclass
 @dataclass
 class HiddenLayerStructure:
     units: int
-    following_dropout: float | None
+
+
+@dataclass
+class DropoutLayerStructure:
+    rate: float
 
 
 @dataclass
@@ -19,3 +23,7 @@ class ConvLayerStructure:
 class PoolLayerStructure:
     pool_size: tuple[int, int]
     stride: int
+
+    @staticmethod
+    def default():
+        return PoolLayerStructure(pool_size=(2, 2), stride=2)

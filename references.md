@@ -29,3 +29,14 @@
 
 
 > https://stats.stackexchange.com/questions/258166/good-accuracy-despite-high-loss-value
+
+> https://stackabuse.com/dont-use-flatten-global-pooling-for-cnns-with-tensorflow-and-keras/
+ 
+ 
+
+>https://github.com/Sabaudian/Binary_Image_Classification_project/blob/main/SMML_Project_Report.pdf
+> 
+IMPROTAJTE 
+> https://gist.github.com/sandys/d0acf13976bae81df253d0a09436cb2b\
+>
+> https://xgboosting.com/xgboost-early-stopping-with-grid-search/

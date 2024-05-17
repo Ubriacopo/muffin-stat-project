@@ -73,3 +73,16 @@ class InvertedAugmentationWrapper(InvertedChannelsAugmentationWrapper, ABC):
         x = keras.layers.RandomRotation(0.3)(x)
 
         return input_layer, x
+
+
+class CustomInvertedAugmentationWrapper(InvertedChannelsAugmentationWrapper, ABC):
+    def make_augmentation(self, input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:
+        input_layer = keras.Input(shape=input_shape, name=self.__class__.__name__)
+        x = keras.layers.Permute(dims=(2, 3, 1))(input_layer)  # Channels Last
+
+        x = keras.layers.RandomFlip(mode="horizontal_and_vertical")(x)
+        x = keras.layers.RandomRotation(0.3)(x)
+        # Input is already normalized in [0,1]
+        x = keras.layers.RandomBrightness(0.4, value_range=(0., 1.))(x)
+
+        return input_layer, x
