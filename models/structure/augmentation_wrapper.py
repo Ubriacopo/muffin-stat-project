@@ -31,6 +31,48 @@ class AugmentationWrapperBase(BaseModelWrapper):
         return keras.Model(inputs=final_model_input, outputs=final_model_output_layer)
 
 
+class NormalizedDataAugmentationWrapper(AugmentationWrapperBase, ABC):
+    means: tuple
+    variances: tuple
+
+    def load_dataset_means_and_stds(self, dataset_means: tuple, dataset_stds: tuple):
+        """
+        Remember: these values are w.r.t. the training data not the whole dataset.
+        :param dataset_means:
+        :param dataset_stds:
+        :return:
+        """
+        self.means = dataset_means
+        self.variances = dataset_stds
+
+    @abstractmethod
+    def make_augmentation_process(self, previous_layer: keras.layers.Layer) -> keras.Layer:
+        pass
+
+    def make_augmentation(self, input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:
+        """
+        We'd like to freeze this function as all normalized augmentations require this step.
+        :param input_shape: Has to be in the shape of (channels x height x width).
+        :return:
+        """
+        input_layer = keras.Input(shape=input_shape, name=self.__class__.__name__)
+
+        if self.means is None or self.variances is None:
+            raise Exception(f"A {self.__class__.__name__} requires to load mean and variances")
+
+        # The torch dataloader always has axis 1 for us.
+        x = self.make_augmentation_process(input_layer)
+
+        x = keras.layers.Normalization(axis=1, mean=self.means, variance=self.variances)(x)
+
+        return input_layer, x
+
+
+class NormalizedModelWrapper(NormalizedDataAugmentationWrapper, ABC):
+    def make_augmentation_process(self, previous_layer: keras.layers.Layer) -> keras.Layer:
+        return previous_layer
+
+
 class InvertedChannelsAugmentationWrapper(AugmentationWrapperBase, ABC):
 
     def __init__(self):
@@ -64,44 +106,24 @@ class CustomInvertedAugmentationWrapper(InvertedChannelsAugmentationWrapper, ABC
         return input_layer, x
 
 
-class NormalizedDataAugmentationWrapper(AugmentationWrapperBase, ABC):
-    means: tuple
-    variances: tuple
-
-    # The calculated means and stds of the TRAINING SET: IMPORTANTE GUARAD:
-
-    # Common pitfall. An important point to make about the preprocessing is that any preprocessing statistics
-    # (e.g. the data mean) must only be computed on the training data, and then applied to the validation / test data.
-    # E.g. computing the mean and subtracting it from every image across the entire dataset and then splitting
-    # the data into train/val/test splits would be a mistake. Instead, the mean must be computed only over the
-    # training data and then subtracted equally from all splits (train/val/test).
-    def load_dataset_means_and_stds(self, dataset_means: tuple, dataset_stds: tuple):
-        self.means = dataset_means
-        self.variances = dataset_stds
-
-    def make_augmentation(self, input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:
-        input_layer = keras.Input(shape=input_shape, name=self.__class__.__name__)
-
-        axis = 3 if self.data_format.value is Channels.channels_last else 1
-        x = keras.layers.Normalization(axis=axis, mean=self.means, variance=self.variances)(input_layer)
-
-        return input_layer, x
-
-
 class NormalizedInvertedAugmentation(NormalizedDataAugmentationWrapper, InvertedChannelsAugmentationWrapper, ABC):
+    def make_augmentation_process(self, previous_layer: keras.layers.Layer) -> keras.Layer:
+        x = keras.layers.Permute(dims=(2, 3, 1))(previous_layer)
 
-    def make_augmentation(self, input_shape: (int, int, int)) -> tuple[keras.Layer, keras.Layer]:
-        input_layer = keras.Input(shape=input_shape, name=self.__class__.__name__)
-        # Invert
-        x = keras.layers.Permute(dims=(2, 3, 1))(input_layer)
-
-        # Normalize the data
-        axis = 1 if self.data_format.value is Channels.channels_last else 3
-        x = keras.layers.Normalization(axis=axis, mean=self.means, variance=self.variances)(x)
-
-        # Make augmentations (Disabled in validation)
         x = keras.layers.RandomFlip(mode="horizontal_and_vertical")(x)
         x = keras.layers.RandomRotation(0.3)(x)
         x = keras.layers.RandomBrightness(0.4, value_range=(-1., 1.))(x)
 
-        return input_layer, x
+        return x
+
+
+# todo this is the way to go. funziona
+class TorchAugmentationModel(NormalizedDataAugmentationWrapper, ABC):
+    def make_augmentation_process(self, previous_layer: keras.layers.Layer) -> keras.Layer:
+        x = keras.layers.Permute(dims=(2, 3, 1))(previous_layer)
+
+        x = keras.layers.RandomFlip(mode="horizontal_and_vertical")(x)
+        x = keras.layers.RandomRotation(0.3)(x)
+        x = keras.layers.RandomBrightness(0.4, value_range=(0., 1.))(x)
+
+        return keras.layers.Permute(dims=(3, 2, 1))(x)
