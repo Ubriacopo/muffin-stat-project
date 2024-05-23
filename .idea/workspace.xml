@@ -4,21 +4,100 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="WIP">
-      <change afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_aug_normalized_train.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_norm_train.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_normalized_train.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/deep_network/hand_tailored_xs_train.csv" afterDir="false" />
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="wip&#10;introduced normalization on mean and variance of the train set. (still to be applied to CNN)">
+      <change afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_augmented_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/bibliography.bib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/sections/6-dnn-vs-cnn.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/sections/7-existing-models.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/sections/8-ensemble-method.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/sections/9-conclusions.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/dataset.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dataset.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/dataset_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dataset_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/complete_search_results.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/complete_search_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/complete_search_train.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_aug_normalized_train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_aug_train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_norm_train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_normalized_train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/hand_tailored_v2_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v2_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/oracle.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/oracle.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_00/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_00/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_01/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_01/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_02/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_02/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_03/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_03/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_04/build_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_09/build_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_04/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_04/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_05/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_05/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_06/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_06/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_06/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_07/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_07/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_08/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_08/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_09/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_09/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_10/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_10/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_11/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_11/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_12/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_12/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_13/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_13/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_14/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_14/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_15/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_15/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_16/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_16/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_17/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_17/trial.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_17/trial.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_18/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_18/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_19/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_19/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_20/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_20/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_21/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_21/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_22/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_22/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_23/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_23/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_24/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_24/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_25/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_26/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_26/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_27/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_27/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_28/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_29/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_29/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_30/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_30/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_31/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_31/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_32/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_32/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_33/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_33/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_34/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_35/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_35/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_36/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_36/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_37/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_37/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_38/trial.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_39/build_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/tuned_models/complete_search/trial_39/trial.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/deep_network/deep_network_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/deep_network/deep_network_construction.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/deep_network/hand_tailored_small_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/deep_network/hand_tailored_small_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/deep_network/hand_tailored_v1_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/deep_network/hand_tailored_v1_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/how_it_was_done.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/structure/augmentation_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/augmentation_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/structure/learning_parameters/sgd_learning_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/structure/learning_parameters/sgd_learning_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/references.md" beforeDir="false" afterPath="$PROJECT_DIR$/references.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/index.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/sections/2-architectures-choices.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/2-architectures-choices.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/sections/3-hyperparameters-space.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/3-hyperparameters-space.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/sections/6-existing-models.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/sections/7-ensemble-method.tex" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +389,8 @@
       <workItem from="1716379698010" duration="11365000" />
       <workItem from="1716394668662" duration="7084000" />
       <workItem from="1716404550480" duration="550000" />
-      <workItem from="1716405218930" duration="7939000" />
+      <workItem from="1716405218930" duration="8530000" />
+      <workItem from="1716468339853" duration="11534000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -456,7 +536,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715925534041</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="wip&#10;introduced normalization on mean and variance of the train set. (still to be applied to CNN)">
+      <option name="closed" value="true" />
+      <created>1716413289224</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716413289224</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +573,8 @@
     <MESSAGE value="Ignore keras build" />
     <MESSAGE value="TODO: Open issues" />
     <MESSAGE value="WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP" />
+    <MESSAGE value="wip&#10;introduced normalization on mean and variance of the train set. (still to be applied to CNN)" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip&#10;introduced normalization on mean and variance of the train set. (still to be applied to CNN)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -499,11 +588,6 @@
           <url>file://$PROJECT_DIR$/models/simple_cnn/generic_conv_nn.py</url>
           <line>59</line>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/structure/learning_parameters/tunable_learning_parameters.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/conv_network/conv_network_structure.py</url>
@@ -522,23 +606,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/structure/augmentation_wrapper.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/structure/augmentation_wrapper.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/structure/augmentation_wrapper.py</url>
-          <line>128</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/structure/augmentation_wrapper.py</url>
-          <line>45</line>
+          <line>46</line>
           <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/structure/augmentation_wrapper.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/data_processing.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook:///home/jacopo/PycharmProjects/muffin-stat-keras/models/naive_dnn_gen/auto_naive_dnn.ipynb</url>

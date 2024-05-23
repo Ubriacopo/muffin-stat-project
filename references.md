@@ -40,3 +40,6 @@ IMPROTAJTE
 > https://gist.github.com/sandys/d0acf13976bae81df253d0a09436cb2b\
 >
 > https://xgboosting.com/xgboost-early-stopping-with-grid-search/
+ 
+
+>https://www.tensorflow.org/tutorials/keras/overfit_and_underfit#strategies_to_prevent_overfitting 
