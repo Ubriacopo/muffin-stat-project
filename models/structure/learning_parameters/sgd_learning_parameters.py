@@ -30,5 +30,5 @@ class SgdLearningParameters(LearningParameters):
 
 class SgdLearningParametersTunable(SgdLearningParameters, TunableLearningParameters):
     def load_parameters(self, hp: keras_tuner.HyperParameters):
-        self.learning_rate = hp.Float(name="lr", min_value=1e-5, max_value=1e-3, sampling='log', step=2)
+        self.learning_rate = hp.Float(name="lr", min_value=1e-5, max_value=1e-2, sampling='log', step=2)
         self.momentum = hp.Float(name="momentum", min_value=0.5, max_value=1, step=0.05)

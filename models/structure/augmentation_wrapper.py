@@ -1,6 +1,7 @@
 from abc import abstractmethod, ABC
 
 import keras
+import torch
 from keras.src.layers import Normalization
 
 from models.structure.base_model_wrapper import BaseModelWrapper, Channels
@@ -36,7 +37,7 @@ class NormalizedDataAugmentationWrapper(AugmentationWrapperBase, ABC):
     mean: tuple
     variance: tuple
 
-    def load_dataset_mean_and_variance(self, dataset_means: tuple, dataset_stds: tuple):
+    def load_dataset_mean_and_variance(self, dataset_means: tuple | torch.Tensor, dataset_stds: tuple | torch.Tensor):
         """
         Remember: these values are w.r.t. the training data not the whole dataset.
         :param dataset_means:
