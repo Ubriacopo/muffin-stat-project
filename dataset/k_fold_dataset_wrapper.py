@@ -57,7 +57,10 @@ class KFoldDatasetWrapper:
         :return:
         """
         test_performances = []
+        test_fold_sizes = []
+
         for i in range(self.k):
+            print(f"Starting procedure for fold {i}")
             # To avoid going OOM
             torch.cuda.empty_cache()
             gc.collect()
@@ -84,11 +87,13 @@ class KFoldDatasetWrapper:
             class_name = re.sub(r'(?<!^)(?=[A-Z])', '_', model_generator.__class__.__name__).lower()
 
             iteration_model.fit(train_dataloader, validation_data=validation_dataloader, epochs=80, callbacks=[
-                keras.callbacks.EarlyStopping(monitor='val_loss', min_delta=1e-3, patience=5, verbose=1, mode='min'),
+                keras.callbacks.EarlyStopping(monitor='val_loss', min_delta=1e-2, patience=5, verbose=1, mode='min'),
                 keras.callbacks.CSVLogger(f"{class_name}_{i}.csv", separator=",", append=False)
             ])
 
             test_dataloader = DataLoader(dataset=test, shuffle=True)
-            test_performances.append(iteration_model.evaluate(test_dataloader, verbose=1))
 
-        return test_performances
+            test_performances.append(iteration_model.evaluate(test_dataloader, verbose=1))
+            test_fold_sizes.append(len(test))
+
+        return test_performances, test_fold_sizes

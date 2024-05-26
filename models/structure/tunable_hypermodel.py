@@ -17,7 +17,7 @@ from models.structure.tunable_wrapper import TunableWrapperBase
 
 
 class TunableHyperModel(HyperModel):
-    def __init__(self, model_structure:  BaseModelWrapper | TunableWrapperBase,
+    def __init__(self, model_structure: BaseModelWrapper | TunableWrapperBase,
                  learn_params: LearningParameters | TunableLearningParameters,
                  input_shape: (int, int, int), tune_batch: bool = False, verbose: bool = True):
         super().__init__()
@@ -60,6 +60,7 @@ class TunableHyperModel(HyperModel):
         if isinstance(self.model_structure, TunableWrapperBase):
             print("Given model is tunable")
             self.model_structure.load_parameters(hyperparameters)
+
         if isinstance(self.learning_parameters, TunableLearningParameters):
             print("Given learning parameters are tunable")
             self.learning_parameters.load_parameters(hyperparameters)

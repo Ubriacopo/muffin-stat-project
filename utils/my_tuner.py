@@ -2,7 +2,7 @@ import glob
 import keras_tuner
 import os
 
-
+# todo change names
 class HistoryDeletingBayesianOptimization(keras_tuner.BayesianOptimization):
     """
     Deletes the model generated during the tuning process as we only care about the parameters

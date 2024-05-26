@@ -1,21 +1,75 @@
 \section{The Muffin vs Chihuahua dataset}
 
-what it contains and where it comes from
-(references at end of document go)
+The Muffin vs Chihuahua set used for the project is published on Kaggle. It is made out around six thousand classified
+images of Muffins and Chihuahuas with some mistakes along the records. (An example of this would be the image of a shrub).
+As the data is labeled we can make use of the \textbf{supervised learning} paradigm, which fist the statistical learning
+framework very well ^https://www.mit.edu/~9.520/spring12/index.html e prof mios tesso.
 
-\subsection{Data distribution}
-how much data we have
+The images in the dataset are of various sizes but all in .jpg format.
+A disclaimer I'd like to make, for a later process, is that the images contained in the dataset have been
+taken from the google search results, as stated by the Kaggle article author.
+This is relevant for the fine tuning of pre-trained model where the used weights are trained from the \textbf{"imagenet"}
+and we cannot assert that the images are not contained in the dataset meaning we could be having information leaking.
+(spiega meglio perche non va bene)
 
-- see how it is split
+\subsection{Data distribution and normalization}
+The dataset is composed of 5917 images and, by default, already partitioned in order to
+have a predetermined test set that is ~20\% of the total.
 
+Of these images both on train and test set 45\% are of muffins meaning
+we have a small imbalance on the dataset. Following the Google's
+\hyperlink https://developers.google.com/machine-learning/data-prep/construct/sampling-splitting/imbalanced-data
+data imbalance chart we fall under neither of the categories so we should not have to worry about it.
 
-\subsection{Normalization}
-reasons and how
-disclaimer
+For the project it was decided to split the data (w.r.t.\ to the full dataset) into:
+\begin{itemize}
+    \item Train(70\%): Samples used to train the Neural Network
+    \item Validation(10\%): A split used for two main reasons:
+    \subitem To measure the learning procedure without compromising the test set.
+    No actual harm would be done if we ran those on \textbf{Test} as we simply compute metrics of the process,
+    but we cannot draw conclusions on the learning process as the test set is reserved for the final model evaluation.
+    \subitem To apply \textbf{Early Stopping} as a regularization technique (todo reference to where i explain).
+    \item Test: (20\%) Untouched and evaluates the model as final step. No further training can be done on the model
+    if we don't provide another test set as we are indirectly tuning the model to better fit this.
+\end{itemize}
+
+Instead of the classical 70-15-15 we opt for the 70-10-20 in order to correctly use the full dataset in the
+k-fold CV procedure to ensure we apply the algorithm correctly as 5 fold CV makes a fold 20\% of the data of course.
+% todo vedi se portarlo da altra parte dove definiamo k fold?
+
+% todo finisci qui meglio questo
+An important step when working with data, in order to make the learning process faster and more effective, is to
+preprocess the data. There are various benefits and some common practices that cannot be avoided.
+
+For the project images have been standardized $(\mu=0, \sigma=1)$ as it improves the calculations of the
+gradients
+%    Uniform Feature Scaling: Normalizing ensures that all features (pixel values) contribute equally to the distance calculations, preventing any single feature from disproportionately influencing the learning process.
+%    Improved Gradient Behavior: Normalized data helps maintain a consistent scale of input values, leading to more stable and effective gradient updates during backpropagation. This reduces the risk of issues such as exploding or vanishing gradients.
+%    Faster Convergence: When data is normalized, the optimization algorithms (like gradient descent) converge more quickly because the parameters can be adjusted in a more balanced and consistent manner.
+%    Reduced Bias in Parameter Initialization: With normalized data, weight initialization schemes can be more effectively applied, which helps in achieving unbiased and efficient learning.
+%    Enhanced Data Distribution: Normalization often transforms the data distribution to a standard range (e.g., zero mean and unit variance), which is ideal for many machine learning algorithms, leading to better model performance.
+
+An important note is that the mean and variance (from which we then can calculate $\sigma$ and do
+the standardization procedure) have to be calculated on the training set alone and then applied to
+validaiton and test data as any pre-processing statistics has to be bound to training data alone.
+If not done like this we would have data leakage leading to overfitting as we learn also features of the unseen data.
+The results would be invalid.
+
+This is a common pitfall that we want to avoid.
 
 \subsection{Data Augmentation}
-how it was done and reasoning
+Data augmentation falls under the class of regularization techniques as stated by Section 5.2.2 of Goodfellow et al's
+\href{http://www.deeplearningbook.org/contents/ml.html}{Deep Learning} that proposes such a definition:
 
-guarantees
+Regularization is any modification we make to a learning algorithm that is intended to reduce its
+generalization error but not its training error.
 
--> to see the effects we have a prior and after on models that weere handmade
+The simple idea to create more samples with small variations to extend the training set whilst making them valid
+is a powerful tool and often adopted in computer vision tasks.
+
+% Todo: Faccio vedere il mio modello di augmentaiton
+% todo : show images augmented
+
+During the development of the project the first models were defined without the use of data augmentation
+to be late enriched of this functionality. The results are then directly compared. Later models all adopt the same
+image augmentation procedure.

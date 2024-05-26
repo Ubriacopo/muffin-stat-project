@@ -11,11 +11,10 @@ class LearningParameters:
                  metrics: list[str | keras.metrics.Metric] = None):
         """
 
-        :param learning_rate:
+        :param learning_rate: The learning rate selected for the optimizer.
         :param loss: A loss function which might be a string or a keras.losses.Loss instance. (The string
         references a loss function of keras that is inferred automatically)
         :param metrics: List of metrics to track in the model compile.
-
         """
         self.learning_rate = learning_rate
 

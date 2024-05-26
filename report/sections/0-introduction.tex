@@ -4,31 +4,48 @@
 
 
 \section{Introduction}
-The task to fulfill in this report was the classification of Muffins and Chihuahuas
-by designing various possible Neural Networks that solve the task. Being this a classification
-problem, where each object has a specific label, and there being only two classes this
-falls under the class of \textbf{Binary Classification Problems}.
+There is no doubt that machine learning solutions are taking an important place in everyday applications.
+Among those many applications some may seem trivial yet require attention to be solved.
 
-The results that I am going to discuss are based on best practices and empirical
-evidence gathered from the scientific community for various years.
+Being able to distinguish Muffins and Chihuahuas, while more on the toy-like nature, is one of such problems.
+The task itself is widely solved by many powerful tools nowadays but, as for the goal of this project, we
+want to see how close we can get to one of those better trained and engineered models
+by simply applying methods and rules of thumb when designing one ourselves.
+
+The problem we want to solve falls under the \textbf{binary classification problems} category,
+and it is required to build a solution with Neural Networks.
+
+The results discussed are based on best practices and empirical evidence gathered from the scientific.
 
 
 \section{Machine and environment information}
-In order to replicate at best the results obtained by my search.
+# todo: sistema e vedi se effettivamente mettere qualcosa di tanto tecnico
+In order to replicate at best the results obtained for the project here are the specs.
 
 \subsection{Machine Information}
-I have done all computations on my own machine as I have a
-GPU to take advantage of. The system on which I performed
-the tasks mounts Ubuntu 22.04 and is defined by the HW:
-Machine :
+
+All the computations have been run locally.
+The system mounts Ubuntu 22.04.4 LTS (Desktop) while the Hardware components are:
+
 \begin{itemize}
-    \item GPU: NVIDIA RTX4070Ti (6GB VRAM)
-    \item CPU: AMD Ryzen ... (32 GB RAM)
+    \item GPU: NVIDIA GeForce RTX3070Ti (6GB VRAM)
+    \item CPU: AMD® Ryzen 7 5800x 8-core processor × 16
+    \item RAM: 32 GB (2x16GB) DDR4
 \end{itemize}
 
+
 \subsection{Development Environment}
-Libraries (just list them)
+To make full use of the GPU power, which is known to be very effective for machine learning given its
+capability of working on matrices very efficiently, we had to use the CUDA drivers released by NVIDIA.
+For the project we ran on CUDA 11.8.
 
-Very brief explanation what keras is
+As it was required to use Keras to develop the project, from the latest release 3.0, we had to choose
+the backend that handles the calculations (as Keras is built around those tecnologies).
+In the past the only choice was to use \textbf{Tensorflow}, we opted for \textbf{PyTorch} instead as it
+is more widespread in the research community.
 
-Why Torch  (Keras 3.0)
+A list briefly describing the various technologies used can be here^ ## todo reference at end of paper.
+
+
+\subsection{Brief explanation on the process}
+# todo? Fare una speigazione del processo di sviluppo?

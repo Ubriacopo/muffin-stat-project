@@ -13,12 +13,12 @@ class SgdLearningParameters(LearningParameters):
     def __init__(self, learning_rate: float, loss: str | keras.losses.Loss = "binary_crossentropy",
                  metrics: list[str | keras.metrics.Metric] = None, momentum: float = 0.9, nesterov: bool = True):
         """
-
-        :param learning_rate:
-        :param loss:
-        :param metrics:
-        :param momentum:
-        :param nesterov:
+        Learning parameters with SGD as optimizer.
+        :param learning_rate: The learning rate to use
+        :param loss: The loss function to use
+        :param metrics: The metrics to use
+        :param momentum: Momentum rate
+        :param nesterov: If true nesterov momentum is applied
         """
         super().__init__(learning_rate, loss, metrics)
         self.momentum = momentum
