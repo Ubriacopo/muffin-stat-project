@@ -1,18 +1,36 @@
 \documentclass[a4paper]{article}
 \usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{makeidx}
+\title{Experimenting on Muffin vs Chihuahuas with various neural network architectures \\
+\large A statistical methods for machine learning project }
+\author{Jacopo Fichera (166trovamatricolacheladimentichisemrpe)}
+
 \begin{document}
+    \pagenumbering{gobble}
+    \maketitle
 
+    \leavevmode%
+    \vfill\noindent
+    \begin{center}
+        \textbf{DECLARATION}
+    \end{center}
+    I/We declare that this material, which I/We now submit for assessment, is entirely my/our own work and has not been taken from the work of others, save and to the extent that such work has been cited and acknowledged within the text of my/our work. I/We understand that plagiarism, collusion, and copying are grave and serious offences in the university and accept the penalties that would be imposed should I engage in plagiarism, collusion or copying. This assignment, or any part of it, has not been previously submitted by me/us or any other person for assessment on this or any other course of study.
+    \newpage
 
-    \begin{abstract}
-        I/We declare that this material, which I/We now submit for assessment, is entirely my/our own work and has not been taken from the work of others, save and to the extent that such work has been cited and acknowledged within the text of my/our work. I/We understand that plagiarism, collusion, and copying are grave and serious offences in the university and accept the penalties that would be imposed should I engage in plagiarism, collusion or copying. This assignment, or any part of it, has not been previously submitted by me/us or any other person for assessment on this or any other course of study.
-    \end{abstract}
+    \pagenumbering{arabic}
+    \tableofcontents
+
 
     \input{sections/0-introduction}
     \input{sections/1-dataset-and-augmentation}
     \input{sections/3-hyperparameters-space}
     \input{sections/4-naive-dnn}
     \input{sections/5-custom-cnn}
-    \input{sections/6-dnn-vs-cnn}
     \input{sections/7-existing-models}
-    \input{sections/8-ensemble-method}
+    \input{sections/9-conclusions}
+    \newpage
+    \bibliographystyle{plain} %
+    \bibliography{bibliography}
 \end{document}

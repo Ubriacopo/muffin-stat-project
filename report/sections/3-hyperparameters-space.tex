@@ -8,14 +8,15 @@ Before we describe the models we have to recognize what defines our learning alg
 The parameters that influence the learning process and are defined beforehand are the so-called \textbf{Hyperparameters}.
 
 % todo lo scrivo?
-For the no-free-lunch theorem it is know that there is no correct setting that works best for any situation meaning
+Due to the no-free-lunch theorem it is know that there is no correct setting that works best for any situation meaning
 that these parameters, while often are good enough in some \"default\" ranges, are domain specific.
 It's therefore common practice to use some heuristics and to later tune these parameters to build a better model.
 
 In the context of Neural Networks the hyperparameters skyrocket as the entire structure of the network
 is a set of hyperparameters itself. Some parameters on which we should like to shine some light on are:
 
-\paragraph{Image size and channels}
+\subsection{Image size and channels}
+\label{subsec:image-size-and-channels}
 The size of the input is an important element when designing a prediction model as we face two possible problems:
 \begin{itemize}
     \item Disomogenea images makes it almost impossible to build a network unless we work with some techniques like
@@ -32,49 +33,119 @@ The choice of the size comes down to the problem and, as we want a more memory r
 we opted for a common image size used in CNNs: 3x224x224 as it has been adopted by many solid models and is a good size to start with.
 % todo reference. Ho questa; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8700246/ ma è legata a endescopy
 
-\paragraph{Batch size}
+\subsection{Loss function (Objective)}
+\label{subsec:loss-function-(objective)}
+The loss function $(l)$ is used to measures the difference between the predicted value $\hat{y}$ and the real value $y$.
+In statistical learning it is part of the specification of the learning problem $(D,l)$ where $D$ is the data distribution and used
+to measure the performance of the predictor. As the distribution is unknown the test set is created to measure the error
+of the predictor that is with a good probability, by the Chernoff-Hoeffding bound, close to the statistical risk.
+
+For the project the \textbf{Binary Cross Entropy loss} was used which is defined as:
+\[l(y, \hat{y}) = - [y*\log(\hat{y}) + (1 - y) * \log(1 - \hat{y})]\]
+
+It is defined as the negative log-likelihood function which can be described as
+\"How likely did the model think the actually observed set of outcomes was.\"
+
+%cita scikit learn + https://www.kaggle.com/code/dansbecker/what-is-log-loss?
+
+The loss function, compared to alternative like the \textbf{hinge loss}, has the advantage of giving a probabilistic
+interpretation of the model outputs and also gives a harsher penalization to miss-classifications.
+
+%todo immagine di curva
+For the final results it was also required to use the \textbf{0-1 loss} to evaluate the risk estimates. It is defined as:
+$l(y,\hat{y}) = \mathds{1}(y \neq \hat{y})$
+
+Note that it is not differentiable therefore not suited for gradient based optimization methods.
+
+\subsection{Optimizer}
+\label{subsec:optimizer}
+It is a procedure that optimizes a given objective function, which in our case is the loss function $l$.
+The problem translates into:
+$\min Q(w) = 1/n \sum Q_i(w)$
+
+where $w$ is the parameter that is to be estimated.
+
+Most optimizers are gradients based with \textbf{Stochastic Gradient Descent}(SGD) being the most popular and ground for many that came after.
+The previous formulae then changes to:
+$w \coloneqq w - \eta /n \nabla Q(w) $
+
+Among the many optimizers that have been proposed during the years, while simple,
+SGD has shown itself to be reliable and still competing well with the various adaptive gradient methods such as Adam.
+
+This has been stated in various different research paper of the last few years like in https://arxiv.org/abs/1705.08292 {gloss}.
+Besides performing as well SGD has a few advantages such as the fact that it has a lower memory footprint and less
+hyperparameters to tune as illustrated by the image.
+% todo immagine footprint
+
+For the project SGD with nesterov momentum has been selected.
+The default learning rate ($\eta$) is set to 0.01 but later fine-tuned.
+
+\subsection{Batch size}
+\label{subsec:batch-size}
+While the optimizer selected is a version of SGD, which will be applied to \textbf{backprop}, the data used was split the
+in various smaller sets. The result of this application is a \textbf{mini-batched} version of the algorithm.
+
+This allows for faster convergence and also better results in general while having a smaller memory footprint.
+
+Common choices for the batch size are powers of two, as suggested by NVIDIA for a better (technical) performance
+https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html % todo nota a fine
+
+Another important consideration:
+\cite*[https://arxiv.org/abs/1609.04836]{
+    It has been observed in practice that when using a larger batch there is a degradation in the quality of the model,
+    as measured by its ability to generalize [...]
+}
+
+For a starting batch size 32 was chosen as it is a solid choice in most cases.
+
+\subsection{Epochs}
+\label{subsec:epochs}
+An epoch is a training process computed on the full training set.
+Based on the machine learning algorithm a single iteration might be sufficient, as for k-NN, but that's not the
+case for NNs as they use gradient based optimization techniques.
+(The parameters of the network are updated at each step and move towards minima so it can require multiple epochs)
+% riscrivi?
+
+As initial value the epochs have been set to 15 to be later replaced by the flexible \textbf{Early Stopping} regularization technique.
+The procedure requires a validation (development) set.
+The error on the validation set is used as a proxy on the generalization error and, if there hasn't been an improvement
+for a set amount of epochs (\textbf{patience}), the training stops as the model is overfitting the data.
+In keras this is simply obtained by increasing the maximum number of epochs and adding to the fit procedure a callback like this one:
+\begin{verbatim}
+     keras.callbacks.EarlyStopping(monitor='val_loss', patience=5, verbose=1, mode='min')
+\end{verbatim}
+
+which, by default, restores the best validate network found.
+In the project, by the fast nature of convergence experimented, the patience has been set to 5 which is small
+but avoids to keep the training process going on for too long.
+% todo vedi se passare almeno a 10 nah
+
+\subsection{Neural Networks structure hyperparameters}
+\label{subsec:neural-networks-structure-hyperparameters}
+Neural networks are among those models that have the highest amount of hyperparameters as they have a structure to define.
+These hyperparameters, such as type and number of hidden layers, are better explained in the coming sections.
 
 
+For starters all hyperparameters related to the NNs structure have been chosen freely and later, in the case of CNN, tuned.
 
-\paragraph{Loss function (Objective)}
-crossentropyloss
-shortly what is a loss function
-what it measures
-
-why cross entropy and not hinge
-
-
-\paragraph{Optimizer}
-An optimizer is a method that minimizes, therefore optimizes, a given objective function (loss function).
-The problem of minimization is the following when speaking of optimizers:
-
-$$ Q(w) = 1/n \sum{}$$
-
-what an optimizer is
-sgd, adam (main comparison is it)
-paper showing sgd converges better at cost of time
-less parameters to tune (reference to chapter 3)
-less memory imprint (4n with momentum)
+\subsection{Free hyperparameters}
+\label{subsec:free-hyperparameters}
+% todo finish
+Some of the hyperparameters presented changed during the development of the project in according to the model structure.
+This procedure of learning hyperparameters can be obtained in various ways, such as nested \textbf{k-fold CV}.
 
 
-\paragraph{Epochs}
+To avoid the time cost of the cited procedure, by using the dedicate library Keras Tuner,  the
+\textbf{Bayesian Optimization} thing was used. This was used to tune the following hyperparemeters:
 
-
-\paragraph{Activation Function}
-relu and not sigmoid except for output
--> relu avoids problems with gradients (tanh was also a solid choice but nowdays relu is more popular)
-
-\paragraph{Neurons}
-
-\paragraph{Layer type}
-
-\paragraph{Free hyperparameters}
-we have some free
--> this is wanted
-
-bayesian optimization instead of nested k-fold CV (keras tuner)
-
-\paragraph{Neural Networks Hyperparameters}
-
-neurons
-convolution layers information
+\begin{itemize}
+    \item Structure Optimization. Where we tune the structure of the neural network (CNN).
+    This will be better discussed in the CNN part %todo reference
+    \item Learning parameters optimization
+    \begin{itemize}
+        \item Learning rate
+        \item Batch size
+        \item Momentum
+    \end{itemize}
+\end{itemize}
+% todo riferimento a fine pagine

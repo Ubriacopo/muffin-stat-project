@@ -1,6 +1,4 @@
 # Hyperparameters
-## Notes:
-- To scout the parameters of an optimizer (if it has any) we will use 5-fold CV
 ## Optimizer
 What optimizer to pick?
 > We use this as reference: https://www.lightly.ai/post/which-optimizer-should-i-use-for-my-machine-learning-project#:~:text=Try%20to%20find%20an%20optimizer,previously%20unseen%20data%20%5B14%5D.

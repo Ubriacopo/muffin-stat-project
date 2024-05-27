@@ -1,12 +1,39 @@
-\section{Naive DNN}
-\commentline E se invece facessi una sezione per i modelli con confronti più diretti?
-potrei fare quello
+\newpage
+\section{Naive MLP}
+\label{sec:naive-mlp}
 
-Brief explainantion what a DNN is (MLP also goes ok)
+The first network structure we tailored on is the classic \textbf{Multilayer Perceptron}(MLP), not to be confused with
+the first proposed Perceptron by McCulloch and Pitts\cite{mcculloch43a} that does share some similarities.
 
-\subsection{Model Structure}
+These networks are feedforward, meaning they propagate information only to the following layers at evaluation time.
 
-- 2 models
+Each layer of the neural network of this structure is made of units, also called neurons, that connect
+to all the ones of the following layer, thus they are called \textbf{fully connected}.
+In each neuron the inputs are weighted by a matrix of coefficients, weights ($w$), summed and passed to an activation function($\sigma$):
+
+\[g(x) = \sigma(w^Tx)\]
+
+The activation function is usually non-linear. The computed value is what is passed as an input to all the neurons of the next layer.
+The parameters that the predictor has to learn during the training process are the values of the weight matrix.
+Of course the values of the matrix will be zero ($w_{i,j} = 0$) when $(i,j) \notin E$ where $E$ are the edges of the acyclic graph
+that connect two neurons, as such connection does not exist.
+
+To implement a simple MLP using Keras only two layers types are needed:
+\begin{verbatim}
+# This defines an input object
+x = keras.layers.Input(shape=(32,))
+# This defines a fully connected layer that takes the previous one in input.
+x = keras.layers.Dense(128, activation="relu")(x)
+\end{verbatim}
+
+All feed-forward neural network models are trained using the \textbf{backpropagation} algorithm\cite{kelley1960gradient}.
+
+\subsection{Proposed model}
+Two proposals were made for the creation of a DNN.
+
+\paragraph{First Model}
+% todo immagine di struttura
+
 
 \subsection{Observed Results}
 
