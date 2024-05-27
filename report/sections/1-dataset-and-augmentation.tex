@@ -51,7 +51,7 @@ gradients
 
 An important note is that the mean and variance (from which we then can calculate $\sigma$ and do
 the standardization procedure) have to be calculated on the training set alone and then applied to
-validaiton and test data as any pre-processing statistics has to be bound to training data alone.
+validation and test data as any pre-processing statistics has to be bound to training data alone.
 If not done like this we would have data leakage leading to overfitting as we learn also features of the unseen data.
 The results would be invalid.
 
@@ -59,6 +59,7 @@ This is a common pitfall that we want to avoid.
 
 \subsection{Data Augmentation}
 Data augmentation falls under the class of regularization techniques as stated by Section 5.2.2 of Goodfellow et al's
+% todo Nota a fine nella bibbliografia?
 \href{http://www.deeplearningbook.org/contents/ml.html}{Deep Learning} that proposes such a definition:
 
 Regularization is any modification we make to a learning algorithm that is intended to reduce its
@@ -71,5 +72,5 @@ is a powerful tool and often adopted in computer vision tasks.
 % todo : show images augmented
 
 During the development of the project the first models were defined without the use of data augmentation
-to be late enriched of this functionality. The results are then directly compared. Later models all adopt the same
-image augmentation procedure.
+to be late enriched of this functionality. The results are then directly compared.
+Later models all adopt the same image augmentation procedure that was described before.
