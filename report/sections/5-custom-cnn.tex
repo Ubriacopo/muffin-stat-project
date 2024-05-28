@@ -36,6 +36,7 @@ The pooling operation simply down-samples the feature map of the data. In keras 
 of the pooling operation. As the difference between different techniques doesn't lead to a satisfing
 conlcusion\cite{bieder2021comparison}, the \textbf{MaxPooling2D}\cite{maxpooling2d} was used as it is the go to for starters:
 
+
 \begin{verbatim}
 # The pool_size defines the windows on which max-pooling is applied.
 # Stride is by default set to None and not used.
@@ -54,7 +55,28 @@ to favor CNNs instead of the simple MLPs approach.
 % todo finish with images
 \paragraph{First Model}
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.15]{imgs/custom-cnn-one}
+    \caption{
+        Graphical representation of the first CNN model. (Not in scale)\\
+        \textit{Image generated via the NN-SVG tool}
+    }\label{fig:custom_cnn}
+\end{figure}
+
+
+
 \paragraph{Second Model}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.15]{/home/jacopo/PycharmProjects/muffin-stat-project/report/imgs/second-conv-net-structure}
+    \caption{
+        Graphical representation of the second CNN model. (Not in scale)\\
+        \textit{Image generated via the NN-SVG tool}
+    }
+    \label{fig:second-conv-net-structure}
+\end{figure}
 
 \subsubsection{Autotuned CNN}
 While the CNN yield not bad results given their simplicity a better structure could be sure identified.

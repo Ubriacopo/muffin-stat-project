@@ -5,19 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_dropout_0.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_dropout_1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_dropout_2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_dropout_3.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_dropout_4.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/vgg_arch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/xception-arch.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/case_studies/model.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/custom-cnn-merge-max-conv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/custom-cnn-one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/custom-cnn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/custom-xception.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/nn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/second-conv-net-structure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/struct_xception_custom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/vgg-16-custom-structure.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/bibliography.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/index.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/out/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/out/bibliography.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/sections/0-introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/0-introduction.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/7-existing-models.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/7-existing-models.tex" afterDir="false" />
     </list>
@@ -88,7 +91,7 @@
     &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
     &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;torch&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jacopo/PycharmProjects/muffin-stat-project/report/out&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jacopo/PycharmProjects/muffin-stat-project/report/imgs/custom-xception.png&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -398,6 +401,8 @@
       <workItem from="1716754839128" duration="2929000" />
       <workItem from="1716812139934" duration="20127000" />
       <workItem from="1716902440045" duration="15847000" />
+      <workItem from="1716923318707" duration="8208000" />
+      <workItem from="1716933512157" duration="458000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -583,7 +588,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716847261100</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="wip">
+      <option name="closed" value="true" />
+      <created>1716923333191</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716923333191</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

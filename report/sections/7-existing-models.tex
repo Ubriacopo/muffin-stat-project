@@ -27,6 +27,7 @@ convolutions throughout the network\cite{understandingdeepwise}. % todo valuta s
 \end{figure}
 
 \subsubsection{Xception applied to Muffin vs Chihuahuas}
+\label{subsubsec:xception}
 
 To measure the performance of Xception on the Muffin vs Chihuahuas task we first see the pretrained model in action
 to later fine tune it on our dataset.
@@ -36,17 +37,31 @@ to later fine tune it on our dataset.
 for our intent is close enough.
 
 Predictions might not include either bakery or chihuahua as there are other classes, in this case we consider them as misclassifications.
-% imggine risultati?
+% todo imggine risultati
 
 
 \paragraph{Fine-tuned Model}
-vanilla
-trained
+In order to fine tune the model and work with desirable results we have to define a new model that wraps around Xception.
+The model has to use the pre-processing on data used by Xception as requested by the keras documentation. It is also
+necessary to output a single prediction value instead of the previous top-k elements.
 
-results
+During the training process, which often takes very little time,  we freeze the network to not destroy the information
+already built by the previous training process and only work up on the last layer of the \textit{Xception}.
+%immagine modello
+\begin{figure}[h]
 
-\subsubsection{Conclusions}
-how good it was
+        \centering
+        \includegraphics[scale=0.2]{/home/jacopo/PycharmProjects/muffin-stat-project/report/imgs/struct_xception_custom}
+    \caption{
+        Before calling \textit{Xception} the model preprocesses the data with the same augmentation procedure we defined for the other
+        networks of the project. It then also rescales the images to meet the requirement for \textit{Xception}.
+        At the top of the model we have now a single dense neuron layer that will return the classification output.
+    }\label{fig:figurexception}
+\end{figure}
+% todo results
+% immagine k fold
+
+
 
 \subsubsection{Vgg16}
 Developed by Visual Geometry Group (VGG) at the University of Oxford the VGG-16\cite{simonyan2015deep} is a deep CNN model that
@@ -63,13 +78,21 @@ was proposed for the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 
 
 Compared to Xception this model has more parameters
 
-\subsubsection{Vgg16 applied to Muffin vs Chihuahuas}
+\subsubsection{VGG-16 applied to Muffin vs Chihuahuas}
+The ideas we applied on Xception and the general methodology (\ref{subsubsec:xception}) are analogous to the ones
+applied to \textit{VGG-16}.
 
-vanilla
-trained
+\begin{figure}[h]
 
-results
+    \centering
+    \includegraphics[scale=0.2]{/home/jacopo/PycharmProjects/muffin-stat-project/report/imgs/vgg-16-custom-structure}
+    \caption{
+        The structure is very similar same to \textit{Xception} with few differences being the \textit{Functional} model
+        and the specialized pre-processing layers.
+    }\label{fig:figurevgg16}
+\end{figure}
 
-\subsubsection{Conclusions}
-how good it was
-
+\paragraph{Pretrained Model}
+% todo results
+\paragraph{Fine-tuned Model}
+% todo results
