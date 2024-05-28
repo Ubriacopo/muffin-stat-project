@@ -3,7 +3,7 @@
 \label{sec:naive-mlp}
 
 The first network structure we tailored on is the classic \textbf{Multilayer Perceptron}(MLP), not to be confused with
-the first proposed Perceptron by McCulloch and Pitts\cite{mcculloch43a} that does share some similarities.
+the first proposed Perceptron by McCulloch and Pitts\cite{mcculloch43a} which does share some similarities with it.
 
 These networks are feedforward, meaning they propagate information only to the following layers at evaluation time.
 
@@ -29,11 +29,15 @@ x = keras.layers.Dense(128, activation="relu")(x)
 All feed-forward neural network models are trained using the \textbf{backpropagation} algorithm\cite{kelley1960gradient}.
 
 \subsection{Proposed model}
-Two proposals were made for the creation of a DNN.
+Two proposals were made for the creation of a MLP.
 
 \paragraph{First Model}
 % todo immagine di struttura
 
+\paragraph{Second Model}
 
 \subsection{Observed Results}
-
+% grafi andamneti dei due modelli + modello finale test valutazione
+The trained models performed poorly as they were highly overfitting the data.
+As it is known that it's harder to train deep networks compared to Convolutional Networks, and have also mostly more parameters,
+the focus shifted to CNNs.

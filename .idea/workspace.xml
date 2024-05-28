@@ -4,29 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Done experimenting?">
-      <change afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_final_10_patience_train.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/out/bibliography.bib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/readme.md" afterDir="false" />
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="wip">
+      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_dropout_0.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_dropout_1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_dropout_2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_dropout_3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_dropout_4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/vgg_arch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/xception-arch.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/deep_network/deep_network_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/deep_network/deep_network_construction.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/deep_network/hand_tailored_xs_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/deep_network/hand_tailored_xs_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_studies.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/optimizer_choice.md" beforeDir="false" afterPath="$PROJECT_DIR$/models/optimizer_choice.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-structure.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/bibliography.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/index.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/3-hyperparameters-space.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/3-hyperparameters-space.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/out/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/out/bibliography.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/6-dnn-vs-cnn.tex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/7-existing-models.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/7-existing-models.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/8-ensemble-method.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/9-conclusions.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/9-conclusions.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,30 +74,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "BibTeX.BibTex.executor": "Run",
-    "LaTeX.Latex.executor": "Run",
-    "Makeindex.index makeindex.executor": "Run",
-    "Python.kaggle_initializer.executor": "Run",
-    "Python.muffin-stat-keras.executor": "Run",
-    "Python.zero_one_validation_loss.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "torch",
-    "last_opened_file_path": "/home/jacopo/PycharmProjects/muffin-stat-project/report/out",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;BibTeX.BibTex.executor&quot;: &quot;Run&quot;,
+    &quot;LaTeX.Latex.executor&quot;: &quot;Run&quot;,
+    &quot;Makeindex.index makeindex.executor&quot;: &quot;Run&quot;,
+    &quot;Python.kaggle_initializer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.muffin-stat-keras.executor&quot;: &quot;Run&quot;,
+    &quot;Python.zero_one_validation_loss.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;torch&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jacopo/PycharmProjects/muffin-stat-project/report/out&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/report/out" />
@@ -139,8 +132,8 @@
         <compiler-path />
         <compiler-arguments />
         <envs />
-        <main-file />
-        <aux-dir />
+        <main-file>$USER_HOME$</main-file>
+        <aux-dir>$USER_HOME$</aux-dir>
       </texify-bibtex>
       <method v="2" />
     </configuration>
@@ -162,6 +155,28 @@
         <latex-distribution>TEXLIVE</latex-distribution>
         <has-been-run>true</has-been-run>
         <bib-run-config>[BibTeX.BibTex]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>EVINCE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <before-run-command />
+        <main-file />
+        <output-path>{projectDir}/out</output-path>
+        <auxil-path>{projectDir}/auxil</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>TEXLIVE</latex-distribution>
+        <has-been-run>false</has-been-run>
+        <bib-run-config>[]</bib-run-config>
         <makeindex-run-config>[]</makeindex-run-config>
       </texify>
       <method v="2" />
@@ -381,7 +396,8 @@
       <workItem from="1716706532152" duration="6797000" />
       <workItem from="1716715628261" duration="13730000" />
       <workItem from="1716754839128" duration="2929000" />
-      <workItem from="1716812139934" duration="19788000" />
+      <workItem from="1716812139934" duration="20127000" />
+      <workItem from="1716902440045" duration="15847000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -559,7 +575,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716758060603</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="wip">
+      <option name="closed" value="true" />
+      <created>1716847261100</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716847261100</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,7 +606,6 @@
     <MESSAGE value="Project restructure 3&#10;Also started writing notebooks for each approach and started implementing functions" />
     <MESSAGE value="Ignore update" />
     <MESSAGE value="Last refactor" />
-    <MESSAGE value="wip" />
     <MESSAGE value="Various improvements and work gone further&#10;Should see if 0-1 loss impl. is ok" />
     <MESSAGE value="WIP&#10;Done searching for parameters in the CNN case" />
     <MESSAGE value="Ignore keras build" />
@@ -590,7 +613,8 @@
     <MESSAGE value="WIP" />
     <MESSAGE value="wip&#10;introduced normalization on mean and variance of the train set. (still to be applied to CNN)" />
     <MESSAGE value="Done experimenting?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done experimenting?" />
+    <MESSAGE value="wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -667,7 +691,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook:///home/jacopo/PycharmProjects/muffin-stat-project/models/conv_network/conv_network_structure_tuned.ipynb</url>
-          <line>270</line>
+          <line>271</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>

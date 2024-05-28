@@ -1,17 +1,45 @@
 \newpage
+
+
 \section{Case Studies}
+\label{sec:case-studies}
 
-\subsubsection{Xception}
+While the handcrafted NNs yielded relatively acceptable results we ask ourselves: how do other, well known,
+model perform with such a trivial task? \\To answer this question two "case studies" were selected: Xception and VGG16.
 
-what xception is
-who pubbblished
-short story of how good it used to be
+\subsection{Xception}
+\label{subsec:xception}
 
-\subsubsection{Structure}
-xception structure
+The Xception\cite{chollet2017xception} model was developed by Google and is an evolution of the Inception model presented
+during the ImageNet Recognition Challenge of 2012, where AlexNet won.
+
+In its latest definition Xception goes for a lower count of parameters of the model but, compared to Inception-v3
+the difference is not extraordinary being only 1M less. What makes the model special is that uses depthwise separable
+convolutions throughout the network\cite{understandingdeepwise}. % todo valuta se toglierlo
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{imgs/xception-arch}
+    \caption{
+        Xception is made of a total of 71 layers.\\
+        \textit{Image by the author of the original paper Francois Chollet\cite{chollet2017xception}}
+    % todo ref
+
+    }\label{fig:figure}
+\end{figure}
 
 \subsubsection{Xception applied to Muffin vs Chihuahuas}
 
+To measure the performance of Xception on the Muffin vs Chihuahuas task we first see the pretrained model in action
+to later fine tune it on our dataset.
+
+\paragraph{Pretrained Model} The pretrained model used for the evaluations has its trained on the
+\textit{Imagenet} dataset. The dataset does not provide a label "muffin" so it was mapped to "bakery"(415) which
+for our intent is close enough.
+
+Predictions might not include either bakery or chihuahua as there are other classes, in this case we consider them as misclassifications.
+% imggine risultati?
+
+
+\paragraph{Fine-tuned Model}
 vanilla
 trained
 
@@ -21,13 +49,19 @@ results
 how good it was
 
 \subsubsection{Vgg16}
+Developed by Visual Geometry Group (VGG) at the University of Oxford the VGG-16\cite{simonyan2015deep} is a deep CNN model that
+was proposed for the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) in 2014 where it achieved top results in object detection and image classification.
 
-what vg16 is
-who pubbblished
-short story of how good it used to be
+\begin{figure}[h]
+    \includegraphics[scale=0.7]{imgs/vgg_arch}
+    \caption{
+        The VGG-16 model is characterized by 13 convolutionakl layers among which at times a max pooling layer has been placed.
+        After those layers the network is closed by 3 fully connected layers with a final softmax classifier.
+        \textit{Image by Davi Frossari (https://www.cs.toronto.edu/~frossard/about/)}
+    }\label{fig:vgg16}
+\end{figure}
 
-\subsubsection{Structure}
-vgg16 structure
+Compared to Xception this model has more parameters
 
 \subsubsection{Vgg16 applied to Muffin vs Chihuahuas}
 
