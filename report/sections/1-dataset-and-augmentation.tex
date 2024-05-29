@@ -1,26 +1,18 @@
 \newpage
 \section{The Muffin vs Chihuahua dataset}\label{sec:the-muffin-vs-chihuahua-dataset}
 
-The Muffin vs Chihuahua set used for the project is published on Kaggle. It is made out around six thousand classified
-images of Muffins and Chihuahuas with some mistakes along the records. (An example of this would be the image of a shrub).
-As the data is labeled we can make use of the \textbf{supervised learning} paradigm, which fist the statistical learning
-framework very well ^https://www.mit.edu/~9.520/spring12/index.html e prof mios tesso.
+The Muffin vs Chihuahua set used for the project was published on Kaggle\cite{datasetCite}.
+It is made out around six thousand classified images of Muffins and Chihuahuas scraped from google search.
+As the data is labeled we can make use of the \textbf{supervised learning} paradigm.
 
 The images in the dataset are of various sizes but all in .jpg format.
-A disclaimer I'd like to make, for a later process, is that the images contained in the dataset have been
-taken from the google search results, as stated by the Kaggle article author.
-This is relevant for the fine tuning of pre-trained model where the used weights are trained from the \textbf{"imagenet"}
-and we cannot assert that the images are not contained in the dataset meaning we could be having information leaking.
-(spiega meglio perche non va bene)
 
 \subsection{Data distribution and normalization}
-The dataset is composed of 5917 images and, by default, already partitioned in order to
-have a predetermined test set that is ~20\% of the total.
+The dataset is composed of 5917 images and, by default, already partitioned in order to have a predetermined test set that is around 20\% of the total.
 
-Of these images both on train and test set 45\% are of muffins meaning
-we have a small imbalance on the dataset. Following the Google's
-\hyperlink https://developers.google.com/machine-learning/data-prep/construct/sampling-splitting/imbalanced-data
-data imbalance chart we fall under neither of the categories so we should not have to worry about it.
+Of these images both on the train and test set around 45\% of the images are muffins. This meas that we have a very small
+imbalance on the dataset which, by Google's\cite{googleBalance} guidelines, is not concerning.
+% todo continua da qui
 
 For the project it was decided to split the data (w.r.t.\ to the full dataset) into:
 \begin{itemize}

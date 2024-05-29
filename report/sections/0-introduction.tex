@@ -1,17 +1,17 @@
 \newpage
+
+
 \section{Introduction}\label{sec:introduction}
-There is no doubt that machine learning solutions are taking an important place in everyday applications.
-Among those many applications some may seem trivial yet require attention to be solved.
+Machine learning solutions are taking an important place in everyday applications.
+Among the tasks we want to solve some may seem trivial.
+Being able to distinguish Muffins and Chihuahuas, which is more of a toy-like problem, is one of those.
+The task itself is widely solved by many powerful and more general purpose tools nowadays but,
+as for the goal for this project, we want to see how close in terms of performance we can get to one of those better engineered solutions.
 
-Being able to distinguish Muffins and Chihuahuas, while more on the toy-like nature, is one of such problems.
-The task itself is widely solved by many powerful tools nowadays but, as for the goal of this project, we
-want to see how close we can get to one of those better trained and engineered models
-by simply applying methods and rules of thumb when designing one ourselves.
+What we are facing \textbf{binary classification problems} category,
+and by the project's requirements it is requested to build a solution using Neural Networks.
 
-The problem we want to solve falls under the \textbf{binary classification problems} category,
-and by the project's requirements it is requested to build a solution with Neural Networks.
-
-The results discussed are based on best practices and empirical evidence gathered from the scientific.
+The results discussed are based on best practices and empirical evidence gathered from the scientific community.
 
 
 \section{Machine and environment information}\label{sec:machine-and-environment-information}
@@ -30,13 +30,10 @@ The system mounts Ubuntu 22.04.4 LTS (Desktop) while the Hardware components are
 \end{itemize}
 
 \subsection{Development Environment}\label{subsec:development-environment}
-To make full use of the GPU power, which is known to be very effective for machine learning given its
-capability of working on matrices very efficiently, we had to use the CUDA drivers released by NVIDIA.
-For the project we ran on CUDA 11.8.
+To make full use of the GPU power, which is very effective for machine learning, CUDA drivers were needed. The project ran on CUDA 11.8.
 
-As it was required to use Keras to develop the project, from the latest release 3.0, we had to choose
-the backend that handles the calculations (as Keras is built around those technologies).
-In the past the only choice was to use \textbf{Tensorflow}, we opted for \textbf{PyTorch} instead as it
-is more widespread in the research community.
+For designing the neural networks \textit{Keras} was used. Since its latest major release (3.0)
+the backend, which handles the calculations, is selectable.
+\textit{PyTorch} was selected as it is very popular among the research community.
 
-A list briefly describing the various technologies used can be here^ ## todo reference at end of paper.
+Libraries and other references are listed in the Github repository\cite{todo}.

@@ -32,12 +32,16 @@ All feed-forward neural network models are trained using the \textbf{backpropaga
 Two proposals were made for the creation of a MLP.
 
 \paragraph{First Model}
-% todo immagine di struttura
+A simple fully connected network that \textit{Flattens} the input (3x224x224) and is followed by two hidden layers
+of 1024 and 256 units respectively. At top of the model there is a single unit layer with sigmoid activation acting as classifier.
 
 \paragraph{Second Model}
+Instead of having two hidden layers this model has only one of 128 units while being structurally identical to the first model.
 
 \subsection{Observed Results}
 % grafi andamneti dei due modelli + modello finale test valutazione
-The trained models performed poorly as they were highly overfitting the data.
-As it is known that it's harder to train deep networks compared to Convolutional Networks, and have also mostly more parameters,
-the focus shifted to CNNs.
+
+Both models overfit. The second one, which is way smaller than the first one, still has too many parameters and leads to overfitting.
+Regularization techniques could be applied to increase the performance of the network but, considering CNN are both mostly
+better and easier to implement when working with images, we shift our focus towards CNN's and leave DNNs behind.
+% todo stampa dati?

@@ -5,22 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/models/case_studies/model.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/custom-cnn-merge-max-conv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/custom-cnn-one.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/custom-cnn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/custom-xception.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/nn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/second-conv-net-structure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/struct_xception_custom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/vgg-16-custom-structure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/conv_network/best_model_final_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v2_final_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v2_k_fold_cv.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newplot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newplot1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newplot11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newplot2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newplot4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newplot9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/5_autotuned_netw_structure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/7_xception_test_images.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_augmented_0.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_augmented_0.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_augmented_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_augmented_1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_augmented_2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_augmented_2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_augmented_3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_augmented_3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_augmented_4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_augmented_4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_k_fold_cv.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_k_fold_cv.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_train.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned_k_fold_results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned_k_fold_results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/hand_tailored_final_10_patience_train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_augmented_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_augmented_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_0.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_0.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_4.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/bibliography.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/index.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/0-introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/0-introduction.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/sections/3-hyperparameters-space.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/3-hyperparameters-space.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/7-existing-models.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/7-existing-models.tex" afterDir="false" />
     </list>
@@ -77,37 +96,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;BibTeX.BibTex.executor&quot;: &quot;Run&quot;,
-    &quot;LaTeX.Latex.executor&quot;: &quot;Run&quot;,
-    &quot;Makeindex.index makeindex.executor&quot;: &quot;Run&quot;,
-    &quot;Python.kaggle_initializer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.muffin-stat-keras.executor&quot;: &quot;Run&quot;,
-    &quot;Python.zero_one_validation_loss.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;torch&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jacopo/PycharmProjects/muffin-stat-project/report/imgs/custom-xception.png&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "BibTeX.BibTex.executor": "Run",
+    "LaTeX.Latex.executor": "Run",
+    "Makeindex.index makeindex.executor": "Run",
+    "Python.kaggle_initializer.executor": "Run",
+    "Python.muffin-stat-keras.executor": "Run",
+    "Python.zero_one_validation_loss.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "torch",
+    "last_opened_file_path": "/home/jacopo/PycharmProjects/muffin-stat-project/report/imgs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/report/imgs" />
       <recent name="$PROJECT_DIR$/report/out" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/models/augmented_dnn" />
       <recent name="$PROJECT_DIR$/models/naive_dnn_gen" />
-      <recent name="$PROJECT_DIR$/models/simple_cnn" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/models/simple_cnn" />
@@ -403,6 +422,7 @@
       <workItem from="1716902440045" duration="15847000" />
       <workItem from="1716923318707" duration="8208000" />
       <workItem from="1716933512157" duration="458000" />
+      <workItem from="1716990449631" duration="22090000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
