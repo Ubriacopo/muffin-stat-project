@@ -1,4 +1,6 @@
 \newpage
+
+
 \section{Naive MLP}
 \label{sec:naive-mlp}
 
@@ -16,7 +18,7 @@ In each neuron the inputs are weighted by a matrix of coefficients, weights ($w$
 The activation function is usually non-linear. The computed value is what is passed as an input to all the neurons of the next layer.
 The parameters that the predictor has to learn during the training process are the values of the weight matrix.
 Of course the values of the matrix will be zero ($w_{i,j} = 0$) when $(i,j) \notin E$ where $E$ are the edges of the acyclic graph
-that connect two neurons, as such connection does not exist.
+that connect two neurons, as such connections do not exist.
 
 To implement a simple MLP using Keras only two layers types are needed:
 \begin{verbatim}
@@ -25,8 +27,7 @@ x = keras.layers.Input(shape=(32,))
 # This defines a fully connected layer that takes the previous one in input.
 x = keras.layers.Dense(128, activation="relu")(x)
 \end{verbatim}
-
-All feed-forward neural network models are trained using the \textbf{backpropagation} algorithm\cite{kelley1960gradient}.
+Most neural network are trained using the \textbf{backpropagation} algorithm.
 
 \subsection{Proposed model}
 Two proposals were made for the creation of a MLP.
@@ -42,6 +43,6 @@ Instead of having two hidden layers this model has only one of 128 units while b
 % grafi andamneti dei due modelli + modello finale test valutazione
 
 Both models overfit. The second one, which is way smaller than the first one, still has too many parameters and leads to overfitting.
-Regularization techniques could be applied to increase the performance of the network but, considering CNN are both mostly
+Regularization techniques could be applied to increase the performance of the network but, considering CNN are both generally
 better and easier to implement when working with images, we shift our focus towards CNN's and leave DNNs behind.
 % todo stampa dati?

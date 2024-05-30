@@ -1,4 +1,6 @@
 \newpage
+
+
 \section{The Muffin vs Chihuahua dataset}\label{sec:the-muffin-vs-chihuahua-dataset}
 
 The Muffin vs Chihuahua set used for the project was published on Kaggle\cite{datasetCite}.
@@ -8,62 +10,65 @@ As the data is labeled we can make use of the \textbf{supervised learning} parad
 The images in the dataset are of various sizes but all in .jpg format.
 
 \subsection{Data distribution and normalization}
-The dataset is composed of 5917 images and, by default, already partitioned in order to have a predetermined test set that is around 20\% of the total.
+The dataset, by default, is already partitioned in order to have a predetermined test set that is around 20\% of the total data.
+Both in training and test sets around 45\% of the images are muffins.
+This meas that we have a very small imbalance on the dataset which, by Google's\cite{googleBalance} guidelines, is not concerning.
 
-Of these images both on the train and test set around 45\% of the images are muffins. This meas that we have a very small
-imbalance on the dataset which, by Google's\cite{googleBalance} guidelines, is not concerning.
-% todo continua da qui
-
-For the project it was decided to split the data (w.r.t.\ to the full dataset) into:
+For the project it was decided to partition the data into:
 \begin{itemize}
-    \item Train(70\%): Samples used to train the Neural Network
-    \item Validation(10\%): A split used for two main reasons:
-    \subitem To measure the learning procedure without compromising the test set.
-    No actual harm would be done if we ran those on \textbf{Test} as we simply compute metrics of the process,
-    but we cannot draw conclusions on the learning process as the test set is reserved for the final model evaluation.
-    \subitem To apply \textbf{Early Stopping}(\ref{subsec:epochs}) as a regularization technique (todo reference to where i explain).
-    \item Test: (20\%) Untouched and evaluates the model as final step. No further training can be done on the model
-    if we don't provide another test set as we are indirectly tuning the model to better fit this.
+    \item \textbf{Training set} (70\%): Samples used to train the Neural Network
+    \item \textbf{Validation set} (10\%): A split used for two main reasons:
+    \begin{itemize}
+        \item To measure learning without compromising the test set.\\
+        We should not draw conclusions on the learning process on the test set as it is reserved for the final model evaluation.
+        \item To apply \textbf{Early Stopping}(\ref{subsec:epochs}) as a regularization technique.
+
+    \end{itemize}
+    \item \textbf{Test set} (20\%): Used to evaluate the final obtained model.
 \end{itemize}
 
-Instead of the classical 70-15-15 we opt for the 70-10-20 in order to correctly use the full dataset in the
-k-fold CV procedure to ensure we apply the algorithm correctly as 5 fold CV makes a fold 20\% of the data of course.
-% todo vedi se portarlo da altra parte dove definiamo k fold?
+The reason we use split the dataset into [70,10,20] parts is that it allows to not waste too much data on the validation set while still
+keeping the 5-fold CV partitioning as intended for the test split, covering the full dataset.
+% todo ref k-foldcv
 
 % todo finisci qui meglio questo
-An important step when working with data, in order to make the learning process faster and more effective, is to
-preprocess the data. There are various benefits and some common practices that cannot be avoided.
 
-For the project images have been standardized $(\mu=0, \sigma=1)$ as it improves the calculations of the
-gradients
+\paragraph{}
+An important step when working with data, in order to make the learning process faster and more effective, is preprocessing.
+For the project images have been standardized $(\mu=0, \sigma=1)$ as it improves the calculations of the gradients and grants a faster convergence.
 %    Uniform Feature Scaling: Normalizing ensures that all features (pixel values) contribute equally to the distance calculations, preventing any single feature from disproportionately influencing the learning process.
 %    Improved Gradient Behavior: Normalized data helps maintain a consistent scale of input values, leading to more stable and effective gradient updates during backpropagation. This reduces the risk of issues such as exploding or vanishing gradients.
 %    Faster Convergence: When data is normalized, the optimization algorithms (like gradient descent) converge more quickly because the parameters can be adjusted in a more balanced and consistent manner.
 %    Reduced Bias in Parameter Initialization: With normalized data, weight initialization schemes can be more effectively applied, which helps in achieving unbiased and efficient learning.
 %    Enhanced Data Distribution: Normalization often transforms the data distribution to a standard range (e.g., zero mean and unit variance), which is ideal for many machine learning algorithms, leading to better model performance.
 
-An important note is that the mean and variance (from which we then can calculate $\sigma$ and do
-the standardization procedure) have to be calculated on the training set alone and then applied to
-validation and test data as any pre-processing statistics has to be bound to training data alone.
-If not done like this we would have data leakage leading to overfitting as we learn also features of the unseen data.
-The results would be invalid.
+While all images are going to be standardized, to avoid a common pitfall, it is important to calculate the mean($\mu$) and the standard deviation($\sigma$) on the training set alone.
+If not done like this we would be having \textit{data leakage} which might lead to overfitting as we also learn from the features of unseen data.
 
-This is a common pitfall that we want to avoid.
+\subsection{Data Augmentation}\label{subsec:data-augmentation}
+% todo vedi se la fa ok
+Regularization is any modification we make to a learning algorithm that is intended to reduce its generalization error but not its training error.
+Data augmentation is a process that falls under these techniques.\cite[Section 5.2.2]{Goodfellow-et-al-2016}
 
-\subsection{Data Augmentation}
-Data augmentation falls under the class of regularization techniques as stated by Section 5.2.2 of Goodfellow et al's
-% todo Nota a fine nella bibbliografia?
-\href{http://www.deeplearningbook.org/contents/ml.html}{Deep Learning} that proposes such a definition:
-
-Regularization is any modification we make to a learning algorithm that is intended to reduce its
-generalization error but not its training error.
-
-The simple idea to create more samples with small variations to extend the training set whilst making them valid
-is a powerful tool and often adopted in computer vision tasks.
+The idea to create more samples with small variations to extend the training set whilst making them valid
+is a common practice in computer vision tasks.
 
 % Todo: Faccio vedere il mio modello di augmentaiton
 % todo : show images augmented
 
-During the development of the project the first models were defined without the use of data augmentation
-to be late enriched of this functionality. The results are then directly compared.
-Later models all adopt the same image augmentation procedure that was described before.
+During the development of the project only the first few models were defined without the use of data augmentation.
+They were later enriched with this functionality as it provided a general increase in performance.
+
+The augmentation in \textit{Keras} can be defined as part of the model. The used procedure is the one shown in the graph of the image \ref{fig:custom_aug_proc}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.3]{imgs/augmentation_only_model_structure}\\
+    \includegraphics[scale=0.4]{imgs/aug_example_rew}
+    \caption{
+        The first image shows the augmentation structure used in the project.\\
+        Below are shown various transformations done on the same (first of grid) image.
+    }\label{fig:custom_aug_proc}
+\end{figure}
+
+
