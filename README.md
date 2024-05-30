@@ -24,7 +24,7 @@ To approach the problem in the best way I decided to make these  different struc
 - Naive Approach: Simple DNN (1 Hidden-Layer) (Number of Hidden Layers?)
 - Auto Tuned CNN
 - Known Architecture: VGG-16
-- Known Architecture: LeNet-5
+- Known Architecture: Xception
 
 Looke up at : https://towardsdatascience.com/neural-network-architectures-156e5bad51ba
 
@@ -32,10 +32,10 @@ Looke up at : https://towardsdatascience.com/neural-network-architectures-156e5b
 We require a way to make 5-CV which will be coded by hand.
 
 ## 3 - Technical Considerations 
-Given the fact that I spent a lot of money on a Graphic card (NVIDIA RTX 3070Ti) I would love to be able to use it for the task. Thing is that my model has a little amount of VRAM, only 8GB. 
-This is for sure a strong limitation on the task as the images can require lots of memory. 
-
-In Keras the model can be quite large during training and the images are loaded in batches so we either have low image resolution or we use a very little batch size.  
+Given the fact that I own on a Graphic card (NVIDIA RTX 3070Ti) I would love heat up my house this winter!  
+Thing is that my model has a little amount of VRAM, only 8GB. 
+This is for sure a strong limitation on the task as the images can require lots of memory
+but given the caliber of the problem it probably won't be a problem. 
 
 ## 4 - Other Considerations
 ### 4.1 - What Optimizer?
@@ -83,8 +83,6 @@ Also remember that:
 #### What size the Images?
 Paper lists https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8700246/ as there is no defined metric but a trend for higher resolution images to give better performing CNN. 
 
-Taking 512x512 RGB is unsustainable for my machine as VRAM of the GPU is not enough so we will try with the 256x256 resolution looking for the best achievable result. From there if the process results unfeasable we keep reducing resolution and removing colors on and on.
-
 
 ### 4.4 - The activation function
-What do we pick? Boh. This needs better investigation.
+We went for relu as it is the old reliable
