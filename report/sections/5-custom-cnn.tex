@@ -59,7 +59,8 @@ led to overfitting the training set with an 88\% accuracy on the test set with a
 To avoid overfitting we apply the dataset augmentation as defined in\ref{fsfs}.
 This resulted in a better model that had $acc=89.10\%$ and a $l=0.2536$ on test with fixed learning epochs.
 We now use K-fold-CV and early stopping to estimate the expected performance of the predictor before re-training a new one.
-The results of the procedure are reported in \ref{tab:kfoldcnn}.
+The results of the procedure are reported in\ref{tab:kfoldcnn} and coherent with what we observe in the final model
+where $acc=$ and $l=$.
 
 
 \begin{figure}[h]
@@ -168,8 +169,8 @@ The best performing model is of the characterized by 4 convolution layers follow
 At top of the network a single dense neuron layer with sigmoid activation is put for final classification.
 The structure can be seen in the shown image \ref{fig:5_autotuned_netw_structure}.
 
-The learning parameters for the CNN were also fine-tuned which led to a final model with TODO acc e loss
-which is on par with what we expect given the k-fold estimates.
+The learning parameters for the CNN were also fine-tuned which led to a final model with $acc=92.31\%$ and $l=0.0769$
+which is below average.
 
 % struttura del coso
 \begin{figure}

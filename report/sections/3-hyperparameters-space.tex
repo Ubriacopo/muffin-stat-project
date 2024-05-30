@@ -3,15 +3,17 @@
 
 \section{Hyperparameters Space}
 \label{sec:hyperparameters-space}
+Neural networks, like many other machine learning algorithms are not strictly algorithms as they have some parameters to
+set before the training process can start, called \textit{Hyperparameters}.
 
-Before we describe the models we have to recognize what defines our learning algorithm in its entirety.
-The parameters that influence the learning process and are defined beforehand are the so-called \textbf{Hyperparameters}.
+This means that, in our case Neural Networks, are families of learning algorithms defined as $\{A_\theta : \theta \in \Theta\}$
+where $\theta$ is an instance of the possible hyperparameters space $\Theta$.
 
-% todo lo scrivo?
-Due to the no-free-lunch theorem it is know that there is no correct setting that works best for any situation meaning
-that these parameters, while often are good enough in some \"default\" ranges, are domain specific.
-It's therefore common practice to use some heuristics and to later tune these parameters to build a better model.
+Due to the \textit{no-free lunch theorem} there is no general setting that works best for any situation. This measn
+that these parameters, while often good in enough in some "default" ranges, are specific to the learning problem.
+It's common practice to apply some heuristics on these parameters and to later tune them in order to build a better model.
 
+%tood vedi se spostare
 In the context of Neural Networks the hyperparameters skyrocket as the entire structure of the network
 is a set of hyperparameters itself. Some parameters on which we should like to shine some light on are:
 
@@ -19,20 +21,17 @@ is a set of hyperparameters itself. Some parameters on which we should like to s
 \label{subsec:image-size-and-channels}
 The size of the input is an important element when designing a prediction model as we face two possible problems:
 \begin{itemize}
-    \item Disomogenea images makes it almost impossible to build a network unless we work with some techniques like
-    zero padding (meaning all images are all enlarged to the same size, leading to redundant data) or the use of RNN and embedding. %todo vedi se si scrive cosi
-    \item Large input size can lead to an exploding number of parameters for the network to fit.
+    \item Images of different sizes require special techniques to be elaborated
+    \item Large input size can lead to a high number of parameters
 \end{itemize}
 
 Downscaling an image has also the advantage of acting as a regularization technique as the images we are providing
 show less detail and enhance recognizable features.
-This means that most of the time, if the image size is not reduced too much, the model generalizes better.
+This means that in most cases, if the image size is not reduced too much, the model tends to generalize better.
 
-In our case images are not in grayscale, and we kept it like this.
-The choice of the size comes down to the problem and, as we want a more memory restricted model in the case of the MLP,
-we opted for a common image size used in CNNs: 3x224x224 as it has been adopted by many solid models and is a good size to start with.
-% todo reference. Ho questa; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8700246/ ma è legata a endescopy
-
+In the development of the project images were kept RGB and resized to $(224 \times 224)$ as it has been adopted by many
+solid models (ex. VGG-16).
+% todo continua da qui
 \subsection{Loss function (Objective)}
 \label{subsec:loss-function-(objective)}
 The loss function $(l)$ is used to measures the difference between the predicted value $\hat{y}$ and the real value $y$.

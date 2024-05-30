@@ -5,43 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/models/conv_network/best_model_final_train.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v2_final_train.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v2_k_fold_cv.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newplot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newplot1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newplot11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newplot2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newplot4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newplot9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/5_autotuned_netw_structure.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/7_xception_test_images.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_augmented_0.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_augmented_0.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_augmented_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_augmented_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_augmented_2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_augmented_2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_augmented_3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_augmented_3.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_augmented_4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_augmented_4.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_k_fold_cv.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_k_fold_cv.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/k_fold_dataset_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/k_fold_dataset_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/best_model_final_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/best_model_final_train.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned_k_fold_results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned_k_fold_results.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/conv_network/hand_tailored_final_10_patience_train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_augmented_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_augmented_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_0.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_0.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_3.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/smaller_hand_tailored_conv_net_4.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/bibliography.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/0-introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/0-introduction.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/3-hyperparameters-space.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/3-hyperparameters-space.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/7-existing-models.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/7-existing-models.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -422,7 +391,7 @@
       <workItem from="1716902440045" duration="15847000" />
       <workItem from="1716923318707" duration="8208000" />
       <workItem from="1716933512157" duration="458000" />
-      <workItem from="1716990449631" duration="22090000" />
+      <workItem from="1716990449631" duration="25923000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -616,11 +585,30 @@
       <option name="project" value="LOCAL" />
       <updated>1716923333191</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="wip">
+      <option name="closed" value="true" />
+      <created>1717018398719</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1717018398719</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="GitHub.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

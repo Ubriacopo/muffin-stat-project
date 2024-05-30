@@ -87,7 +87,7 @@ class KFoldDatasetWrapper:
             class_name = re.sub(r'(?<!^)(?=[A-Z])', '_', model_generator.__class__.__name__).lower()
 
             iteration_model.fit(train_dataloader, validation_data=validation_dataloader, epochs=80, callbacks=[
-                keras.callbacks.EarlyStopping(monitor='val_loss', min_delta=1e-2, patience=5, verbose=1, mode='min'),
+                keras.callbacks.EarlyStopping(monitor='val_loss', min_delta=1e-3, patience=5, verbose=1, mode='min'),
                 keras.callbacks.CSVLogger(f"{class_name}_{i}.csv", separator=",", append=False)
             ])
 
