@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Closing project. Refactor of some of the code">
-      <change afterPath="$PROJECT_DIR$/report/imgs/loss_dnn_one.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/deep_network/deep_network_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/deep_network/deep_network_construction.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/deep_network/hand_tailored_xs_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/deep_network/hand_tailored_xs_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/bibliography.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/out/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/out/bibliography.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/my_tuner.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/my_tuner.py" afterDir="false" />
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Closing project">
+      <change afterPath="$PROJECT_DIR$/report_muffin_vs_chihuahua_jacopo_fichera.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,30 +60,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;BibTeX.BibTex.executor&quot;: &quot;Run&quot;,
-    &quot;LaTeX.Latex.executor&quot;: &quot;Run&quot;,
-    &quot;Makeindex.index makeindex.executor&quot;: &quot;Run&quot;,
-    &quot;Python.kaggle_initializer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.muffin-stat-keras.executor&quot;: &quot;Run&quot;,
-    &quot;Python.zero_one_validation_loss.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;torch&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jacopo/PycharmProjects/muffin-stat-project/report/imgs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "BibTeX.BibTex.executor": "Run",
+    "LaTeX.Latex.executor": "Run",
+    "Makeindex.index makeindex.executor": "Run",
+    "Python.kaggle_initializer.executor": "Run",
+    "Python.muffin-stat-keras.executor": "Run",
+    "Python.zero_one_validation_loss.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "torch",
+    "last_opened_file_path": "/home/jacopo/PycharmProjects/muffin-stat-project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/report/imgs" />
@@ -397,7 +390,7 @@
       <workItem from="1717048430101" duration="4564000" />
       <workItem from="1717074165850" duration="22949000" />
       <workItem from="1717101208377" duration="9254000" />
-      <workItem from="1717110550718" duration="1360000" />
+      <workItem from="1717110550718" duration="1877000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -631,7 +624,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717110528392</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Closing project">
+      <option name="closed" value="true" />
+      <created>1717111942248</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1717111942248</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -675,7 +676,8 @@
     <MESSAGE value="wip" />
     <MESSAGE value="Almost done" />
     <MESSAGE value="Closing project. Refactor of some of the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Closing project. Refactor of some of the code" />
+    <MESSAGE value="Closing project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Closing project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
