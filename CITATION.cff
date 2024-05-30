@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "The code for the muffin vs chihuahua project by Jacopo Fichera."
+authors:
+  - family-names: Druskat
+    given-names: Stephan
+    orcid: https://orcid.org/1234-5678-9101-1121
+title: "Muffin vs Chihuahua SMML Project Repository"
+version: 1.0.0
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.1234
+date-released: 2024-05-31
