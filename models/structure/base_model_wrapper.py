@@ -13,7 +13,7 @@ class Channels(enum.Enum):
 
 
 class BaseModelWrapper:
-    """ todo: sistema la descrizione che ora che ho rifattorizzato questa classe è piu general purpose
+    """
     A learning algorithm with one or more hyperparameters is not really an algorithm, but rather
     a family of algorithms, one for each possible assignment of values to the hyperparameters.
         ~ Hyperparameter tuning and risk estimates, Nicolò Cesa-Bianchi.
