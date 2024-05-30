@@ -97,3 +97,4 @@ class KFoldDatasetWrapper:
             test_fold_sizes.append(len(test))
 
         return test_performances, test_fold_sizes
+### 8.4.2 - Model evaluation

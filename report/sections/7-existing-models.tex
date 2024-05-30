@@ -97,7 +97,7 @@ already built by the previous training process and only work up on the last laye
 %\end{figure}
 
 The K-fold CV estimates results lead to a better model than the previously built ones as shown in the Table \ref{tab:kfoldxception}.
-The final trained model has has $acc=99.24\%$ and $l_{0-1}=00.76$ which is consistent with the expected values.
+The final trained model has has $acc=99.16\%$ and $l_{0-1}=00.84$ which is consistent with the expected values.
 
 \begin{table}
     \centering
@@ -173,7 +173,8 @@ It only correctly classified 57.01\% of the samples, yielding a worse performanc
 \paragraph{Fine-tuned Model}
 The fine tuning process on the \textit{VGG-16} uses its dedicated
 pre-processing function on the data. After a short training period
-we ran the K-fold CV estimates which are reported in Table \ref{tab:kfoldxception}.
+we ran the K-fold CV estimates which are reported in Table \ref{tab:kfoldxception} which is in line
+with the final model having $acc=99.16\%$ and $l_{0-1}=0.084$.
 Overall the performance of the classifier is on pair with the one of \textit{Xception}
 with one drawback being: it has more parameters. So, from a practical standpoint,
 \textit{Xception} could be preferable as the two models is not that far different in terms of results.

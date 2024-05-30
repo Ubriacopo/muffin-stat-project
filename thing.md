@@ -1,1 +1,0 @@
-> https://github.com/banda-larga/smml2022/blob/main/CDImageClassification.ipynb

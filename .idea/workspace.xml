@@ -4,36 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_0.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_3.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/best_found_model_4.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/hand_tailored_v1_final_train.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/conv_network/model.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/aug_example.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/aug_example_rew.odg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/aug_example_rew.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/imgs/augmentation_only_model_structure.png" afterDir="false" />
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Almost done">
+      <change afterPath="$PROJECT_DIR$/models/case_studies/vgg16_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/Logo_Università_degli_Studi_di_Milano.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/cnn_best_confusion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/cnn_model_1_final_confusion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/cnn_model_2_final_confusion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/confusion_matrix_first_conv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/vgg16_confusion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/xception_confusion.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callbacks/early_stopping.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/callbacks/learning_rate_reschedule.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/dataset.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dataset.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/dataset.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/k_fold_dataset_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/k_fold_dataset_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/case_studies/xception_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/xception_train.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned_k_fold_results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_structure_tuned_k_fold_results.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newplot1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newplot11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newplot2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newplot4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/newplot9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/bibliography.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/0-introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/0-introduction.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/1-dataset-and-augmentation.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/3-hyperparameters-space.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/3-hyperparameters-space.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/4-naive-dnn.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/deep_network/deep_network_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/deep_network/deep_network_construction.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/todo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/kaggle_initializer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/kaggle_initializer.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/muffin_chihuahua.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/index.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/5-custom-cnn.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/sections/7-existing-models.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/7-existing-models.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/sections/9-conclusions.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/9-conclusions.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/machine_limitations.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/notes.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,11 +122,11 @@
       <recent name="$PROJECT_DIR$/models/naive_dnn_gen" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/models/simple_cnn" />
       <recent name="$PROJECT_DIR$/models/structure/learning_parameters" />
       <recent name="$PROJECT_DIR$/models/structure" />
       <recent name="$PROJECT_DIR$/utils" />
-      <recent name="$PROJECT_DIR$/models/naive_dnn_gen/data/3500-1350_no_aug" />
     </key>
   </component>
   <component name="RunManager" selected="LaTeX.Latex">
@@ -416,7 +417,8 @@
       <workItem from="1716933512157" duration="458000" />
       <workItem from="1716990449631" duration="25923000" />
       <workItem from="1717048430101" duration="4564000" />
-      <workItem from="1717074165850" duration="15643000" />
+      <workItem from="1717074165850" duration="22949000" />
+      <workItem from="1717101208377" duration="7560000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -618,7 +620,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717018398719</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Almost done">
+      <option name="closed" value="true" />
+      <created>1717091239014</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1717091239014</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,7 +670,8 @@
     <MESSAGE value="wip&#10;introduced normalization on mean and variance of the train set. (still to be applied to CNN)" />
     <MESSAGE value="Done experimenting?" />
     <MESSAGE value="wip" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip" />
+    <MESSAGE value="Almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -700,21 +711,6 @@
           <line>48</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dataset/k_fold_dataset_wrapper.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dataset/k_fold_dataset_wrapper.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dataset/k_fold_dataset_wrapper.py</url>
-          <line>83</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook:///home/jacopo/PycharmProjects/muffin-stat-keras/models/naive_dnn_gen/auto_naive_dnn.ipynb</url>
           <line>108</line>
@@ -727,7 +723,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook:///home/jacopo/PycharmProjects/muffin-stat-project/dataset/dataset.ipynb</url>
-          <line>21</line>
+          <line>20</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
