@@ -46,15 +46,15 @@ class KFoldDatasetWrapper:
                 self.split_dataset[ignored_fold])
 
     def run_k_fold_cv(self, learning_parameters_template: LearningParameters,
-                      # todo un metodo anche per non normalized che ricorda non è detto lo isa (modelli prefatti)
                       model_generator: BaseModelWrapper | NormalizedDataAugmentationWrapper,
                       input_shape: tuple[int, int, int], batch_size: int = 32):
         """
-        :param learning_parameters_template:
-        :param model_generator:
+        Runs k-fold CV and returns the tuple of [estimates, test_size].
+        :param learning_parameters_template: Learning parameters that compile the model
+        :param model_generator: A model generator to create a new instance each k iteration
         :param input_shape: The expected input shape is C x W x H
-        :param batch_size:
-        :return:
+        :param batch_size: Batch size for training
+        :return: the tuple of [estimates, test_size].
         """
         test_performances = []
         test_fold_sizes = []

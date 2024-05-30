@@ -25,7 +25,6 @@ class HandTailoredConvNet(NormalizedModelWrapper):
         return input_layer, output_layer
 
 
-# todo vedi se da errori ereditarieta cosi
 class AugmentedHandTailoredConvNet(TorchAugmentationModel, HandTailoredConvNet):
     pass
 

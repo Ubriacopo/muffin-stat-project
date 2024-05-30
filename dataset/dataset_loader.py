@@ -3,8 +3,6 @@ import torchvision
 from torch.utils.data import DataLoader, Dataset
 from torchvision.datasets import ImageFolder
 
-default_measures = {"mean": torch.Tensor([0.6501, 0.5935, 0.5400]), "variance": torch.Tensor()}
-
 
 def dataset_loader(image_size: tuple[int, int], data_folder_path: str = "../../data") -> \
         tuple[torchvision.datasets.ImageFolder, torchvision.datasets.ImageFolder]:

@@ -68,6 +68,8 @@ The augmentation in \textit{Keras} can be defined as part of the model. The used
     \caption{
         The first image shows the augmentation structure used in the project.\\
         Below are shown various transformations done on the same (first of grid) image.
+        The "permutation" layer present in the augmentation has only been added
+    to work around some techical issues given by the torch backend and dataloading.
     }\label{fig:custom_aug_proc}
 \end{figure}
 
