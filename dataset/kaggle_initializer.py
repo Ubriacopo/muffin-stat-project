@@ -29,7 +29,7 @@ def download_dataset(kaggle_username: str, kaggle_key: str, force_download: bool
 
 
 def download_dataset_with_kagglejson(force_download: bool = False) -> None:
-    kaggle_configuration_data = json.load(open('data/kaggle.json'))
+    kaggle_configuration_data = json.load(open('../data/kaggle.json'))
     download_dataset(kaggle_configuration_data['username'], kaggle_configuration_data['key'], force_download)
    
 download_dataset_with_kagglejson(False)

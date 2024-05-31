@@ -1,3 +1,4 @@
+A long list of used references. 
 >"Hyperband: A Novel Bandit-Based Approach to Hyperparameter Optimization." Journal of Machine Learning Research 18 (2018): 1-52.
 
 
@@ -35,10 +36,9 @@
  
 
 >https://github.com/Sabaudian/Binary_Image_Classification_project/blob/main/SMML_Project_Report.pdf
-> 
-IMPROTAJTE 
+ 
 > https://gist.github.com/sandys/d0acf13976bae81df253d0a09436cb2b\
->
+
 > https://xgboosting.com/xgboost-early-stopping-with-grid-search/
  
 

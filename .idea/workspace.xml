@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Closing project">
-      <change afterPath="$PROJECT_DIR$/report_muffin_vs_chihuahua_jacopo_fichera.pdf" afterDir="false" />
+    <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Citation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/introduction.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaggle_initializer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/kaggle_initializer.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaggle_initializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/kaggle_initializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/utils/keras-3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras.md" beforeDir="false" afterPath="$PROJECT_DIR$/utils/keras.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/references.md" beforeDir="false" afterPath="$PROJECT_DIR$/references.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/bibliography.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/out/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/out/bibliography.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/sections/0-introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/0-introduction.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/sections/7-existing-models.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/7-existing-models.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report_muffin_vs_chihuahua_jacopo_fichera.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/report_muffin_vs_chihuahua_jacopo_fichera.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,18 +98,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/report/imgs" />
       <recent name="$PROJECT_DIR$/report/out" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/models/augmented_dnn" />
-      <recent name="$PROJECT_DIR$/models/naive_dnn_gen" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dataset" />
+      <recent name="$PROJECT_DIR$/utils" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/models/simple_cnn" />
       <recent name="$PROJECT_DIR$/models/structure/learning_parameters" />
-      <recent name="$PROJECT_DIR$/models/structure" />
-      <recent name="$PROJECT_DIR$/utils" />
     </key>
   </component>
   <component name="RunManager" selected="LaTeX.Latex">
@@ -231,7 +243,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kaggle_initializer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataset/kaggle_initializer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -390,7 +402,7 @@
       <workItem from="1717048430101" duration="4564000" />
       <workItem from="1717074165850" duration="22949000" />
       <workItem from="1717101208377" duration="9254000" />
-      <workItem from="1717110550718" duration="1877000" />
+      <workItem from="1717110550718" duration="3312000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -632,7 +644,31 @@
       <option name="project" value="LOCAL" />
       <updated>1717111942248</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Citation">
+      <option name="closed" value="true" />
+      <created>1717112469074</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1717112469074</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Citation">
+      <option name="closed" value="true" />
+      <created>1717112629010</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1717112629010</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Citation">
+      <option name="closed" value="true" />
+      <created>1717112834444</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1717112834444</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -677,7 +713,8 @@
     <MESSAGE value="Almost done" />
     <MESSAGE value="Closing project. Refactor of some of the code" />
     <MESSAGE value="Closing project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Closing project" />
+    <MESSAGE value="Citation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Citation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
