@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32b7ce5d-696e-4454-a416-d64413a27132" name="Changes" comment="Citation">
+      <change afterPath="$PROJECT_DIR$/report/imgs/tsetup.5.1.1.tar.xz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/tsetup.5.1.1/Telegram/Telegram" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/imgs/tsetup.5.1.1/Telegram/Updater" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/introduction.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kaggle_initializer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/kaggle_initializer.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kaggle_initializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/kaggle_initializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/utils/keras-3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keras.md" beforeDir="false" afterPath="$PROJECT_DIR$/utils/keras.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/case_studies/case_studies.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references.md" beforeDir="false" afterPath="$PROJECT_DIR$/references.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/bibliography.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/out/bibliography.bib" beforeDir="false" afterPath="$PROJECT_DIR$/report/out/bibliography.bib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/0-introduction.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/0-introduction.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/sections/7-existing-models.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/sections/7-existing-models.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report_muffin_vs_chihuahua_jacopo_fichera.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/report_muffin_vs_chihuahua_jacopo_fichera.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/dataset.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dataset.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/dataset_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/dataset_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/kaggle_initializer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/kaggle_initializer.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/kaggle_initializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/kaggle_initializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/conv_network/conv_network_construction.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/deep_network/deep_network_construction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/deep_network/deep_network_construction.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,30 +69,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "BibTeX.BibTex.executor": "Run",
-    "LaTeX.Latex.executor": "Run",
-    "Makeindex.index makeindex.executor": "Run",
-    "Python.kaggle_initializer.executor": "Run",
-    "Python.muffin-stat-keras.executor": "Run",
-    "Python.zero_one_validation_loss.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "database.data.extractors.current.export.id": "CSV-Groovy.csv.groovy",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "torch",
-    "last_opened_file_path": "/home/jacopo/PycharmProjects/muffin-stat-project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;BibTeX.BibTex.executor&quot;: &quot;Run&quot;,
+    &quot;LaTeX.Latex.executor&quot;: &quot;Run&quot;,
+    &quot;Makeindex.index makeindex.executor&quot;: &quot;Run&quot;,
+    &quot;Python.kaggle_initializer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.muffin-stat-keras.executor&quot;: &quot;Run&quot;,
+    &quot;Python.zero_one_validation_loss.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;CSV-Groovy.csv.groovy&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;torch&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jacopo/PycharmProjects/muffin-stat-project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -318,8 +315,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
-        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17011.127" />
+        <option value="bundled-python-sdk-48aec45f0201-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17011.127" />
       </set>
     </attachedChunks>
   </component>
@@ -403,6 +400,8 @@
       <workItem from="1717074165850" duration="22949000" />
       <workItem from="1717101208377" duration="9254000" />
       <workItem from="1717110550718" duration="3312000" />
+      <workItem from="1717424833961" duration="3093000" />
+      <workItem from="1717676894278" duration="2195000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization V2">
       <option name="closed" value="true" />
@@ -744,6 +743,16 @@
           <line>48</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dataset/kaggle_initializer.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dataset/dataset_loader.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook:///home/jacopo/PycharmProjects/muffin-stat-keras/models/naive_dnn_gen/auto_naive_dnn.ipynb</url>
           <line>108</line>
@@ -768,6 +777,11 @@
           <url>notebook:///home/jacopo/PycharmProjects/muffin-stat-project/models/conv_network/conv_network_structure_tuned.ipynb</url>
           <line>271</line>
           <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook:///home/jacopo/PycharmProjects/muffin-stat-project/models/deep_network/deep_network_construction.ipynb</url>
+          <line>23</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

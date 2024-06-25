@@ -27,7 +27,7 @@ def dataset_loader(image_size: tuple[int, int], data_folder_path: str = "../../d
 
 def dataset_information(dataset: Dataset, image_size: tuple[int, int]) -> tuple[torch.Tensor, torch.Tensor]:
     """
-    Returns the mean and standard deviation of the dataset.
+    Returns the mean and variance of the dataset.
     I followed the example shown here: https://kozodoi.me/blog/20210308/compute-image-stats
     :param image_size: The size of the images of the dataset in input
     :param dataset: Dataset to measure mean and standard deviation of
@@ -44,6 +44,6 @@ def dataset_information(dataset: Dataset, image_size: tuple[int, int]) -> tuple[
         square_sums += (image ** 2).sum(axis=(1, 2))
 
     mean = sums / size  # Mean
-    variance = square_sums / size - mean ** 2  # The standard deviation
+    variance = square_sums / size - mean ** 2
 
     return mean, variance

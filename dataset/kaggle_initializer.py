@@ -19,7 +19,7 @@ def download_dataset(kaggle_username: str, kaggle_key: str, force_download: bool
     kaggle_api = KaggleApi()
     kaggle_api.authenticate()
     
-    train_and_test_exist = Path("/data/train").exists() and Path("/data/test").exists() 
+    train_and_test_exist = Path("../data/train").exists() and Path("../data/test").exists()
     if not train_and_test_exist or force_download: kaggle_api.dataset_download_files(
         'samuelcortinhas/muffin-vs-chihuahua-image-classification', 'data', unzip=True
     )
